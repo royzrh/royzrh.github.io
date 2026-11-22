@@ -7,11 +7,10 @@
   "title": "光学神经网络：基本原理、技术架构与应用进展（Test）",
   "description": "简单梳理光学神经网络的基本原理、技术架构、发展历程、训练方法、应用与系统挑战。",
   "publishDate": "2026-10-30T00:00:00.000Z",
-  "updatedDate": null,
+  "updatedDate": "2026-11-22T11:07:00.000Z",
   "tags": [
-    "光学神经网络",
-    "光计算",
-    "文献综述"
+    "onn",
+    "综述"
   ],
   "url": "https://royzhao.cn/blog/optical-neural-networks-review",
   "path": "/blog/optical-neural-networks-review",
@@ -24,10 +23,10 @@
     "title": "光学神经网络：基本原理、技术架构与应用进展（Test）",
     "description": "简单梳理光学神经网络的基本原理、技术架构、发展历程、训练方法、应用与系统挑战。",
     "publishDate": "2026-10-30T00:00:00.000Z",
+    "updatedDate": "2026-11-22T11:07:00.000Z",
     "tags": [
-      "光学神经网络",
-      "光计算",
-      "文献综述"
+      "onn",
+      "综述"
     ],
     "draft": false,
     "comment": true,
