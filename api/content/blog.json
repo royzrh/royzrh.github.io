@@ -2,25 +2,8 @@
   "schemaVersion": 1,
   "type": "blog",
   "locale": "zh",
-  "total": 10,
+  "total": 9,
   "items": [
-    {
-      "id": "post-2026-11-21-16-57-58",
-      "type": "blog",
-      "locale": "zh",
-      "contentLanguage": "zh",
-      "title": "Test",
-      "description": "Test",
-      "publishDate": "2026-11-21T16:57:58.000Z",
-      "updatedDate": "2026-11-21T17:01:00.000Z",
-      "tags": [
-        "test"
-      ],
-      "url": "https://royzhao.cn/blog/post-2026-11-21-16-57-58",
-      "path": "/blog/post-2026-11-21-16-57-58",
-      "heroImage": null,
-      "category": "daily"
-    },
     {
       "id": "post-2026-11-21-15-05-45",
       "type": "blog",
