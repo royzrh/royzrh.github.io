@@ -1,0 +1,1 @@
+function n(e){if(typeof e!="string")return"";let t=e.trim();if(!t)return"";/^[a-z][a-z0-9+.-]*:/i.test(t)||(t="https://"+t);try{const r=new URL(t);return!["http:","https:"].includes(r.protocol)||r.username||r.password||!r.hostname.includes(".")||/[\s<>"\\]/.test(t)||r.href.length>2048?"":r.href}catch{return""}}export{n};
