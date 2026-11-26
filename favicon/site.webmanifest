@@ -5,9 +5,9 @@
   "scope": "../",
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "roy-favicon-square-v2.png",
+      "sizes": "64x64",
+      "type": "image/png"
     }
   ],
   "theme_color": "#11151b",
