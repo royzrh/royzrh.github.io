@@ -38,24 +38,29 @@
   "headlineEn": "",
   "websiteHistory": [
     {
-      "date": "2026-03-18",
-      "description": "网站第一个[预览版](https://royzhao.top)上线！",
-      "descriptionEn": "The first [preview version](https://royzhao.top) of the website is now live!"
+      "date": "2025-06-21",
+      "description": "注册域名[royzhao.cn](royzhao.cn)。",
+      "descriptionEn": "Registered a domain name[royzhao.cn](royzhao.cn)."
     },
     {
-      "date": "2026-06-08",
+      "date": "2026-03-18",
+      "description": "roy的第一个[预览版](https://royzhao.top)上线！",
+      "descriptionEn": "Roy's first [preview version](https://royzhao.top) of the website is now live!"
+    },
+    {
+      "date": "2026-06-07",
       "description": "[royzhao.top](https://royzhao.top)暂时停用啦，采用全新域名的[相册主页](/zz/)上线！",
       "descriptionEn": "[royzhao.top](https://royzhao.top) is temporarily offline, and the [photo gallery homepage](/zz/) is now live on a brand-new domain!"
     },
     {
       "date": "2026-10-20",
-      "description": "采用[Axi-Theme](https://github.com/Axi404/Axi-Theme)主题的全新版本上线啦！🎉",
+      "description": "采用[Axi-Theme](https://github.com/Axi404/Axi-Theme)主题搭建的全新版本上线啦！🎉",
       "descriptionEn": "The brand-new version of this site, powered by [Axi-Theme](https://github.com/Axi404/Axi-Theme), is now live! 🎉"
     },
     {
       "date": "2026-11-27",
-      "description": "今天，我把[相册](/zz/)搬进主站！",
-      "descriptionEn": "Today, the [album](/photography/) entered the main station! After thinking for a long time……"
+      "description": "从今天起，[相册](/zz/)正式合并到主站啦！本次更新增加了页面动效并解决了一些已知问题。",
+      "descriptionEn": "Today, the [album](/photography/) entered the main station! This update adds page animations and fixes some known issues."
     }
   ]
 }
