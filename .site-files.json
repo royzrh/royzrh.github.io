@@ -23,6 +23,7 @@
   "links",
   "links.json",
   "moments",
+  "photography",
   "projects",
   "research-page.json",
   "robots.txt",
@@ -36,5 +37,6 @@
   "styles",
   "tags",
   "terms",
-  "unsubscribe"
+  "unsubscribe",
+  "zz"
 ]

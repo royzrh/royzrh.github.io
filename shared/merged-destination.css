@@ -1,0 +1,115 @@
+@import url('./article-fonts.css');
+
+.destination-legacy{color-scheme:light;--paper:#fff;--ink:#2c2a27;--muted:#8c8273;--line:#e2dcd0;--footer:#5e6063}html.dark .destination-legacy{color-scheme:dark;--paper:#121110;--ink:#e9e5dd;--muted:#b3aca1;--line:#302d28;--footer:#171614}.destination-legacy *{box-sizing:border-box}.destination-legacy{margin:0;background:var(--paper);color:var(--ink);font-family:'Times New Roman','Noto Serif SC','Songti SC',serif;line-height:1.9}.destination-legacy a{color:inherit}.destination-legacy header{background:#080808;color:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid #ffffff1a}.destination-legacy header>div{max-width:1240px;margin:auto;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;gap:20px}.destination-legacy .identity{display:flex;gap:14px;align-items:center}.destination-legacy .logo{text-decoration:none;font-size:34px;line-height:1}.destination-legacy .identity img{width:32px;height:32px;border-radius:50%;object-fit:cover}.destination-legacy .identity span{font-size:13px}.destination-legacy header strong{font-size:16px;letter-spacing:.15em;font-weight:400}.destination-legacy main{max-width:860px;margin:auto;padding:66px 32px 80px}.destination-legacy h1{font-size:40px;font-weight:400;letter-spacing:.12em;margin:0}.destination-legacy .trip-date{color:var(--muted);font-size:13px;letter-spacing:.15em;border-bottom:1px solid var(--line);padding-bottom:30px;margin-bottom:36px}.destination-legacy .journey-prose{overflow-wrap:anywhere}.destination-legacy .journey-prose h2,.destination-legacy .journey-prose h3{font-weight:400;margin-top:2em;scroll-margin-top:100px}.destination-legacy .journey-prose img{display:block;max-width:80%;height:auto;margin:32px auto}.destination-legacy .journey-prose blockquote{border-left:2px solid var(--line);padding-left:24px;color:var(--muted);margin-inline:0}.destination-legacy .journey-prose pre{background:color-mix(in srgb,var(--ink) 6%,var(--paper));overflow:auto;padding:20px}.destination-legacy .journey-prose table{border-collapse:collapse;width:100%;display:block;overflow:auto}.destination-legacy .journey-prose td,.destination-legacy .journey-prose th{border:1px solid var(--line);padding:8px 14px}.destination-legacy .journey-prose a{text-underline-offset:4px}.destination-legacy footer{background:var(--footer);color:#fffC;text-align:center;padding:36px 20px;font-size:12px;letter-spacing:.12em}.destination-legacy footer a{display:inline-block;margin-top:14px;text-decoration:none;border-bottom:1px solid #fff7}.destination-legacy .notes{border-top:1px solid var(--line);margin-top:64px;padding-top:28px}.destination-legacy .notes h2{font-size:20px;font-weight:400}.destination-legacy .notes [data-comment-form] input,.destination-legacy .notes [data-comment-form] textarea{display:block;width:100%;font:inherit;font-size:14px;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:10px;margin:10px 0}.destination-legacy .notes [data-comment-form] button,.destination-legacy .notes > button,.destination-legacy .notes [data-comments] button{font:inherit;font-size:12px;background:transparent;border:1px solid var(--line);color:inherit;padding:8px 16px;cursor:pointer}.destination-legacy .notes li{list-style:none;border-bottom:1px solid var(--line);padding:18px 0}.destination-legacy .notes ul{padding:0}.destination-legacy .notes small{color:var(--muted)}.destination-legacy [hidden]{display:none!important}.destination-legacy .preview-note{background:#eee6d4;color:#514c42;padding:10px;text-align:center;font-size:12px}@media(max-width:600px){.destination-legacy header>div{padding:14px 20px}.destination-legacy main{padding:40px 22px}.destination-legacy h1{font-size:30px}.destination-legacy .identity span{display:none}.destination-legacy .journey-prose img{max-width:100%}}
+
+
+
+/* Only the travel journal body shares the blog's reading fonts. */
+.destination-legacy .journey-prose {
+  font-family: 'Blog Charter', 'Blog Han Serif', serif;
+  font-weight: 400;
+}
+
+.destination-legacy .journey-prose :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--photo-text-font);
+}
+
+/* Latin type follows the main site's font stack; Chinese keeps the album's serif face. */
+@font-face{font-family:'Century Gothic';src:url('/shared/fonts/centurygothic.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:'Century Gothic';src:url('/shared/fonts/centurygothic_bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:ComicShannsMono;src:url('/shared/fonts/ComicShannsMonoNerdFontPropo-Regular.otf');font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:Satoshi;src:url('/shared/fonts/Satoshi-Variable.ttf');font-weight:300 900;font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:Satoshi;src:url('/shared/fonts/Satoshi-VariableItalic.ttf');font-weight:300 900;font-style:italic;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+.destination-legacy{--photo-text-font:'Century Gothic','ComicShannsMono','Satoshi','Noto Serif SC','SimSun','Songti SC',serif}
+.destination-legacy,.destination-legacy :is(button,input,textarea,select,.font-mono,.font-serif,.roy-rich-count,.roy-rich-body code,.holiday-poster .poster-title,.photo-cover-caption [data-admin=hero-gear]){font-family:var(--photo-text-font)!important}
+/* Preserve the photographic wordmark as a mark, independently of body typography. */
+.destination-legacy #loginBtn>span,.destination-legacy .identity .logo{font-family:'Times New Roman',serif!important}
+/* The header name uses sans-serif in both Chinese and Latin. */
+.destination-legacy .identity span{font-family:'Century Gothic','Satoshi',system-ui,sans-serif!important}
+
+
+/* Keep the original journal surface and single reading column. */
+.site-shell.destination-shell{width:100%;max-width:none;padding:0;background:#fff;color:#2c2a27;min-height:100dvh}
+html.dark .site-shell.destination-shell{background:#121110;color:#e9e5dd}
+.site-shell.destination-shell>header-component{width:100%;max-width:none;margin:0;top:0;padding:12px max(40px,calc((100vw - 1160px)/2));min-height:68px;border:0;border-bottom:1px solid #ffffff1a;border-radius:0;background:#080808;color:#fff;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.site-shell.destination-shell>header-component[data-show=false]{transform:none}
+.site-shell.destination-shell>header-component>a{margin:0;color:#fff}
+.site-shell.destination-shell>header-component #headerExpandConetent>div>a:hover,.site-shell.destination-shell>header-component .blog-menu-link:hover{color:#ffffffb0}
+.site-shell.destination-shell>header-component :is(#language-switch-btn,#header-account-button,#toggleMenu){border-color:#ffffff40;color:#fff}
+.site-shell.destination-shell>header-component .header-controls>roy-header-account::before,.site-shell.destination-shell>header-component .header-controls>roy-header-account::after{background:#ffffff40}
+.site-shell.destination-shell>header-component :is(#language-switch-btn,#header-account-button,#toggleMenu):hover{background:#ffffff15}
+.site-shell.destination-shell>header-component .dropdown-menu{color:hsl(var(--foreground))}
+@media(max-width:1023px){
+ .site-shell.destination-shell>header-component{min-height:60px;padding:10px 20px}
+ .site-shell.destination-shell>.header-menu-surface{background:#080808;border-color:#ffffff20}
+ .site-shell.destination-shell>header-component .dropdown-menu .category-link{color:#ffffffb0}
+ .site-shell.destination-shell>header-component .dropdown-menu .category-link:hover{background:#ffffff15;color:#fff}
+}
+.site-shell.destination-shell .journey-footer{margin:0;border:0;padding:36px 20px;background:var(--footer);color:#ffffffcc}
+
+
+
+
+.destination-legacy .journey-prose :is(p,ul,ol,blockquote,pre,table){margin-block:1em}
+.destination-legacy .journey-prose :is(h2,h3,h4,h5,h6){line-height:1.5;font-weight:400;scroll-margin-top:100px}
+.destination-legacy .journey-prose h2{font-size:1.5em}
+.destination-legacy .journey-prose h3{font-size:1.17em}
+.destination-legacy .journey-prose h4{font-size:1em;margin-block:1.33em}
+.destination-legacy .journey-prose h5{font-size:.83em;margin-block:1.67em}
+.destination-legacy .journey-prose h6{font-size:.67em;margin-block:2.33em}
+.destination-legacy .journey-prose :is(ul,ol){padding-inline-start:2.5em}
+.destination-legacy .journey-prose ul{list-style:disc}
+.destination-legacy .journey-prose ol{list-style:decimal}
+.destination-legacy .journey-prose a{text-decoration:underline}
+.destination-legacy .journey-prose img{max-width:80%;height:auto}
+@media(max-width:600px){.destination-legacy .journey-prose img{max-width:100%}}
+.destination-legacy .notes [data-status]{margin-block:1em}
+.destination-legacy .journey-return{border-top:1px solid var(--line);padding-top:22px;margin-top:48px;text-align:center;font-size:13px;letter-spacing:.1em}
+.destination-legacy .journey-return a{display:inline-block;border-bottom:1px solid var(--line)}
+.destination-legacy .journey-return a:hover{color:hsl(var(--primary))}
+
+.destination-legacy .journey-prose strong{font-weight:bold}.destination-legacy .journey-prose em{font-style:italic}.destination-legacy .journey-footer a:hover{color:white}.destination-legacy .journey-prose :is(h2,h3,h4,h5,h6){scroll-margin-top:100px}
+
+/* The shared account widget has its own control geometry. Keep legacy
+   journal form rules out of the login widget, including alternate modes. */
+.destination-legacy .notes > roy-account-auth{font-size:14px;line-height:1.5;margin-top:20px;color:var(--ink)}
+.destination-legacy .notes .roy-auth-fields{gap:12px;align-items:flex-end}
+.destination-legacy .notes .roy-auth-field>span{margin-bottom:6px;font-size:13px}
+.destination-legacy .notes .roy-auth-field input{margin:0;height:44px;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);font-size:14px;line-height:22px}
+.destination-legacy .notes .roy-auth-primary{margin:0;height:44px;min-height:44px;padding:10px 16px;border:1px solid var(--ink);border-radius:4px;background:var(--ink);color:var(--paper);font-size:13px;line-height:22px;white-space:nowrap}
+.destination-legacy .notes .roy-auth-primary:hover:not(:disabled){opacity:.85}
+.destination-legacy .notes .roy-auth-links{margin-top:12px;gap:8px 18px;font-size:12px;line-height:1.6;color:var(--muted)}
+.destination-legacy .notes .roy-auth-links :is(a,button){margin:0;padding:0;border:0;background:none;border-radius:0;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px}
+.destination-legacy .notes .roy-auth-links :is(a,button):hover{color:var(--ink)}
+.destination-legacy .notes :is(.roy-auth-hint,.roy-auth-status,.roy-auth-target){font-size:12px;line-height:1.7}
+@media(max-width:480px){
+ .destination-legacy .notes .roy-auth-field{flex-basis:100%}
+ .destination-legacy .notes .roy-auth-primary{width:100%}
+}
+
+/* Photographic journal contents: a quiet editorial rail, never a blog card. */
+.destination-shell{--journal-paper:#fff;--journal-ink:#2c2a27;--journal-muted:#8c8273;--journal-line:#e2dcd0;--journal-soft:#f0ede7}
+html.dark .destination-shell{--journal-paper:#121110;--journal-ink:#e9e5dd;--journal-muted:#b3aca1;--journal-line:#302d28;--journal-soft:#26231f}
+.destination-legacy #content,.destination-legacy #destination-notes{scroll-margin-top:100px}
+.destination-legacy .journey-reading-grid{width:100%}
+.destination-legacy .journey-toc{display:none}
+@media(min-width:1024px){
+ .destination-legacy .journey-reading-grid{display:grid;grid-template-columns:minmax(144px,1fr) minmax(0,860px) minmax(144px,1fr);align-items:start}
+ .destination-legacy .journey-reading-grid>main{grid-column:2;width:100%;min-width:0;margin:0}
+ .destination-legacy .journey-toc{grid-column:3;display:block;position:sticky;top:100px;min-width:0;padding:74px 20px 0 0}
+ .destination-legacy .journey-toc-inner{max-width:220px;max-height:calc(100dvh - 190px);overflow:auto;overscroll-behavior:contain;border-left:1px solid var(--line);padding:0 0 0 16px}
+ .destination-legacy .journey-toc-label{font-size:12px;letter-spacing:.18em;color:var(--muted);margin-bottom:14px}
+ .destination-legacy .journey-toc ul{list-style:none;padding:0;margin:0}
+ .destination-legacy .journey-toc a{display:block;font-size:13px;line-height:1.65;color:var(--muted);padding:5px 0;padding-inline-start:calc(var(--journey-depth)*.55em);overflow-wrap:anywhere;transition:color .18s}
+ .destination-legacy .journey-toc a:is(:hover,:focus-visible,[aria-current=location]){color:var(--ink)}
+ .destination-legacy .journey-toc a[aria-current=location]{font-weight:600}
+}
+@media(max-width:1023px){
+ .destination-shell .mobile-toc-button{background:var(--journal-soft);color:var(--journal-muted)}
+ .destination-shell .mobile-toc-button:is(:hover,:focus-visible,[aria-expanded=true]){color:var(--journal-ink);border-color:var(--journal-line)}
+ .destination-shell .mobile-toc-panel{background:var(--journal-paper);color:var(--journal-ink);border-color:var(--journal-line);border-radius:4px;box-shadow:0 8px 25px #00000012;font-family:Century Gothic,Satoshi,Noto Serif SC,SimSun,serif}
+ .destination-shell .mobile-toc-title{font-weight:400;letter-spacing:.15em;color:var(--journal-muted);border-color:var(--journal-line)}
+ .destination-shell .mobile-toc-panel a{border-radius:2px}
+ .destination-shell .mobile-toc-panel a:is(:hover,:focus-visible,[aria-current=true]){background:var(--journal-soft);color:var(--journal-ink)}
+ .destination-shell:has(>header-component.expanded)>.mobile-toc-dock{visibility:hidden;pointer-events:none}
+}

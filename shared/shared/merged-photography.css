@@ -1,0 +1,2338 @@
+.photo-legacy *,.photo-legacy ::before,.photo-legacy ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.photo-legacy ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.photo-legacy *,.photo-legacy ::before,.photo-legacy ::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+.photo-legacy ::before,.photo-legacy ::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+.photo-legacy,.photo-legacy :host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.photo-legacy {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.photo-legacy hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.photo-legacy abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.photo-legacy h1,.photo-legacy h2,.photo-legacy h3,.photo-legacy h4,.photo-legacy h5,.photo-legacy h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.photo-legacy a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.photo-legacy b,.photo-legacy strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+.photo-legacy code,.photo-legacy kbd,.photo-legacy samp,.photo-legacy pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.photo-legacy small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.photo-legacy sub,.photo-legacy sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.photo-legacy sub {
+  bottom: -0.25em;
+}
+
+.photo-legacy sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.photo-legacy table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.photo-legacy button,.photo-legacy input,.photo-legacy optgroup,.photo-legacy select,.photo-legacy textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.photo-legacy button,.photo-legacy select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.photo-legacy button,.photo-legacy input:where([type='button']),.photo-legacy input:where([type='reset']),.photo-legacy input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.photo-legacy :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.photo-legacy :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.photo-legacy progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.photo-legacy ::-webkit-inner-spin-button,.photo-legacy ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.photo-legacy [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.photo-legacy ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+.photo-legacy ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.photo-legacy summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+.photo-legacy blockquote,.photo-legacy dl,.photo-legacy dd,.photo-legacy h1,.photo-legacy h2,.photo-legacy h3,.photo-legacy h4,.photo-legacy h5,.photo-legacy h6,.photo-legacy hr,.photo-legacy figure,.photo-legacy p,.photo-legacy pre {
+  margin: 0;
+}
+
+.photo-legacy fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-legacy legend {
+  padding: 0;
+}
+
+.photo-legacy ol,.photo-legacy ul,.photo-legacy menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+.photo-legacy dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+.photo-legacy textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+.photo-legacy input::placeholder,.photo-legacy textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+.photo-legacy button,.photo-legacy [role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+.photo-legacy :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+.photo-legacy img,.photo-legacy svg,.photo-legacy video,.photo-legacy canvas,.photo-legacy audio,.photo-legacy iframe,.photo-legacy embed,.photo-legacy object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+.photo-legacy img,.photo-legacy video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+.photo-legacy [hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}.photo-legacy .\!container {
+  width: 100% !important;
+}.photo-legacy .container {
+  width: 100%;
+}@media (min-width: 640px) {
+
+  .photo-legacy .\!container {
+    max-width: 640px !important;
+  }
+
+  .photo-legacy .container {
+    max-width: 640px;
+  }
+}@media (min-width: 768px) {
+
+  .photo-legacy .\!container {
+    max-width: 768px !important;
+  }
+
+  .photo-legacy .container {
+    max-width: 768px;
+  }
+}@media (min-width: 1024px) {
+
+  .photo-legacy .\!container {
+    max-width: 1024px !important;
+  }
+
+  .photo-legacy .container {
+    max-width: 1024px;
+  }
+}@media (min-width: 1280px) {
+
+  .photo-legacy .\!container {
+    max-width: 1280px !important;
+  }
+
+  .photo-legacy .container {
+    max-width: 1280px;
+  }
+}@media (min-width: 1536px) {
+
+  .photo-legacy .\!container {
+    max-width: 1536px !important;
+  }
+
+  .photo-legacy .container {
+    max-width: 1536px;
+  }
+}.photo-legacy .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}.photo-legacy .pointer-events-none {
+  pointer-events: none;
+}.photo-legacy .\!visible {
+  visibility: visible !important;
+}.photo-legacy .visible {
+  visibility: visible;
+}.photo-legacy .fixed {
+  position: fixed;
+}.photo-legacy .absolute {
+  position: absolute;
+}.photo-legacy .relative {
+  position: relative;
+}.photo-legacy .sticky {
+  position: sticky;
+}.photo-legacy .inset-0 {
+  inset: 0px;
+}.photo-legacy .bottom-6 {
+  bottom: 1.5rem;
+}.photo-legacy .left-2 {
+  left: 0.5rem;
+}.photo-legacy .right-2 {
+  right: 0.5rem;
+}.photo-legacy .right-6 {
+  right: 1.5rem;
+}.photo-legacy .top-0 {
+  top: 0px;
+}.photo-legacy .top-6 {
+  top: 1.5rem;
+}.photo-legacy .z-10 {
+  z-index: 10;
+}.photo-legacy .z-20 {
+  z-index: 20;
+}.photo-legacy .z-40 {
+  z-index: 40;
+}.photo-legacy .z-50 {
+  z-index: 50;
+}.photo-legacy .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}.photo-legacy .mb-1 {
+  margin-bottom: 0.25rem;
+}.photo-legacy .mb-10 {
+  margin-bottom: 2.5rem;
+}.photo-legacy .mb-16 {
+  margin-bottom: 4rem;
+}.photo-legacy .mb-2 {
+  margin-bottom: 0.5rem;
+}.photo-legacy .mb-3 {
+  margin-bottom: 0.75rem;
+}.photo-legacy .mb-4 {
+  margin-bottom: 1rem;
+}.photo-legacy .mb-5 {
+  margin-bottom: 1.25rem;
+}.photo-legacy .mb-6 {
+  margin-bottom: 1.5rem;
+}.photo-legacy .mb-8 {
+  margin-bottom: 2rem;
+}.photo-legacy .ml-2 {
+  margin-left: 0.5rem;
+}.photo-legacy .mr-0\.5 {
+  margin-right: 0.125rem;
+}.photo-legacy .mr-1 {
+  margin-right: 0.25rem;
+}.photo-legacy .mt-1 {
+  margin-top: 0.25rem;
+}.photo-legacy .mt-2 {
+  margin-top: 0.5rem;
+}.photo-legacy .mt-3 {
+  margin-top: 0.75rem;
+}.photo-legacy .mt-4 {
+  margin-top: 1rem;
+}.photo-legacy .mt-5 {
+  margin-top: 1.25rem;
+}.photo-legacy .mt-6 {
+  margin-top: 1.5rem;
+}.photo-legacy .block {
+  display: block;
+}.photo-legacy .inline-block {
+  display: inline-block;
+}.photo-legacy .flex {
+  display: flex;
+}.photo-legacy .table {
+  display: table;
+}.photo-legacy .grid {
+  display: grid;
+}.photo-legacy .hidden {
+  display: none;
+}.photo-legacy .h-80 {
+  height: 20rem;
+}.photo-legacy .h-\[1px\] {
+  height: 1px;
+}.photo-legacy .max-h-\[75vh\] {
+  max-height: 75vh;
+}.photo-legacy .max-h-\[90vh\] {
+  max-height: 90vh;
+}.photo-legacy .min-h-\[4rem\] {
+  min-height: 4rem;
+}.photo-legacy .min-h-screen {
+  min-height: 100vh;
+}.photo-legacy .w-12 {
+  width: 3rem;
+}.photo-legacy .w-8 {
+  width: 2rem;
+}.photo-legacy .w-full {
+  width: 100%;
+}.photo-legacy .min-w-0 {
+  min-width: 0px;
+}.photo-legacy .max-w-2xl {
+  max-width: 42rem;
+}.photo-legacy .max-w-7xl {
+  max-width: 80rem;
+}.photo-legacy .max-w-full {
+  max-width: 100%;
+}.photo-legacy .max-w-sm {
+  max-width: 24rem;
+}.photo-legacy .flex-1 {
+  flex: 1 1 0%;
+}.photo-legacy .flex-shrink {
+  flex-shrink: 1;
+}.photo-legacy .shrink-0 {
+  flex-shrink: 0;
+}.photo-legacy .translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.photo-legacy .translate-y-20 {
+  --tw-translate-y: 5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.photo-legacy .-rotate-6 {
+  --tw-rotate: -6deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.photo-legacy .rotate-3 {
+  --tw-rotate: 3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.photo-legacy .transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}@keyframes bounce {
+
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}.photo-legacy .animate-bounce {
+  animation: bounce 1s infinite;
+}@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}.photo-legacy .animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}.photo-legacy .animate-spin {
+  animation: spin 1s linear infinite;
+}.photo-legacy .cursor-pointer {
+  cursor: pointer;
+}.photo-legacy .select-none {
+  user-select: none;
+}.photo-legacy .resize-none {
+  resize: none;
+}.photo-legacy .resize {
+  resize: both;
+}.photo-legacy .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}.photo-legacy .grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}.photo-legacy .flex-col {
+  flex-direction: column;
+}.photo-legacy .flex-wrap {
+  flex-wrap: wrap;
+}.photo-legacy .items-start {
+  align-items: flex-start;
+}.photo-legacy .items-end {
+  align-items: flex-end;
+}.photo-legacy .items-center {
+  align-items: center;
+}.photo-legacy .justify-center {
+  justify-content: center;
+}.photo-legacy .justify-between {
+  justify-content: space-between;
+}.photo-legacy .gap-1 {
+  gap: 0.25rem;
+}.photo-legacy .gap-1\.5 {
+  gap: 0.375rem;
+}.photo-legacy .gap-10 {
+  gap: 2.5rem;
+}.photo-legacy .gap-12 {
+  gap: 3rem;
+}.photo-legacy .gap-16 {
+  gap: 4rem;
+}.photo-legacy .gap-2 {
+  gap: 0.5rem;
+}.photo-legacy .gap-3 {
+  gap: 0.75rem;
+}.photo-legacy .gap-4 {
+  gap: 1rem;
+}.photo-legacy .gap-6 {
+  gap: 1.5rem;
+}.photo-legacy .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}.photo-legacy .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}.photo-legacy .space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+}.photo-legacy .space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}.photo-legacy .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}.photo-legacy .space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}.photo-legacy .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}.photo-legacy .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}.photo-legacy .overflow-hidden {
+  overflow: hidden;
+}.photo-legacy .overflow-x-auto {
+  overflow-x: auto;
+}.photo-legacy .overflow-y-auto {
+  overflow-y: auto;
+}.photo-legacy .whitespace-nowrap {
+  white-space: nowrap;
+}.photo-legacy .break-words {
+  overflow-wrap: break-word;
+}.photo-legacy .rounded {
+  border-radius: 0.25rem;
+}.photo-legacy .rounded-2xl {
+  border-radius: 1rem;
+}.photo-legacy .rounded-full {
+  border-radius: 9999px;
+}.photo-legacy .rounded-sm {
+  border-radius: 0.125rem;
+}.photo-legacy .border {
+  border-width: 1px;
+}.photo-legacy .border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}.photo-legacy .border-b {
+  border-bottom-width: 1px;
+}.photo-legacy .border-t {
+  border-top-width: 1px;
+}.photo-legacy .border-dashed {
+  border-style: dashed;
+}.photo-legacy .border-\[\#2c2a27\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(44 42 39 / var(--tw-border-opacity, 1));
+}.photo-legacy .border-\[\#8c8e91\]\/20 {
+  border-color: rgb(140 142 145 / 0.2);
+}.photo-legacy .border-\[\#8c8e91\]\/30 {
+  border-color: rgb(140 142 145 / 0.3);
+}.photo-legacy .border-\[\#c5beb4\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 190 180 / var(--tw-border-opacity, 1));
+}.photo-legacy .border-\[\#c5d0db\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 208 219 / var(--tw-border-opacity, 1));
+}.photo-legacy .border-\[\#d6cfc2\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(214 207 194 / var(--tw-border-opacity, 1));
+}.photo-legacy .border-\[\#d8cbb5\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 203 181 / var(--tw-border-opacity, 1));
+}.photo-legacy .border-\[\#e2dcd0\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 220 208 / var(--tw-border-opacity, 1));
+}.photo-legacy .border-black\/5 {
+  border-color: rgb(0 0 0 / 0.05);
+}.photo-legacy .border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}.photo-legacy .border-transparent {
+  border-color: transparent;
+}.photo-legacy .border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}.photo-legacy .border-white\/20 {
+  border-color: rgb(255 255 255 / 0.2);
+}.photo-legacy .bg-\[\#2c2a27\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 42 39 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#2c2a27\]\/15 {
+  background-color: rgb(44 42 39 / 0.15);
+}.photo-legacy .bg-\[\#2c2a27\]\/50 {
+  background-color: rgb(44 42 39 / 0.5);
+}.photo-legacy .bg-\[\#5e6063\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 96 99 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#737578\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 117 120 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#9c9c9c\]\/85 {
+  background-color: rgb(156 156 156 / 0.85);
+}.photo-legacy .bg-\[\#e8edf2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 237 242 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#f5f4f0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 244 240 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#f7f5f0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 245 240 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#faf0dc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 240 220 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#fafaf9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 249 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-\[\#fffdf9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 253 249 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}.photo-legacy .bg-black\/95 {
+  background-color: rgb(0 0 0 / 0.95);
+}.photo-legacy .bg-stone-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-stone-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}.photo-legacy .bg-white\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}.photo-legacy .bg-white\/15 {
+  background-color: rgb(255 255 255 / 0.15);
+}.photo-legacy .bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
+}.photo-legacy .bg-white\/90 {
+  background-color: rgb(255 255 255 / 0.9);
+}.photo-legacy .bg-white\/95 {
+  background-color: rgb(255 255 255 / 0.95);
+}.photo-legacy .bg-zinc-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity, 1));
+}.photo-legacy .object-contain {
+  object-fit: contain;
+}.photo-legacy .object-cover {
+  object-fit: cover;
+}.photo-legacy .p-2 {
+  padding: 0.5rem;
+}.photo-legacy .p-3 {
+  padding: 0.75rem;
+}.photo-legacy .p-4 {
+  padding: 1rem;
+}.photo-legacy .p-5 {
+  padding: 1.25rem;
+}.photo-legacy .p-6 {
+  padding: 1.5rem;
+}.photo-legacy .p-8 {
+  padding: 2rem;
+}.photo-legacy .px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}.photo-legacy .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}.photo-legacy .px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}.photo-legacy .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}.photo-legacy .py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}.photo-legacy .py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}.photo-legacy .py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}.photo-legacy .py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}.photo-legacy .py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}.photo-legacy .py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}.photo-legacy .py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}.photo-legacy .py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}.photo-legacy .pb-1 {
+  padding-bottom: 0.25rem;
+}.photo-legacy .pb-12 {
+  padding-bottom: 3rem;
+}.photo-legacy .pb-20 {
+  padding-bottom: 5rem;
+}.photo-legacy .pb-3 {
+  padding-bottom: 0.75rem;
+}.photo-legacy .pb-4 {
+  padding-bottom: 1rem;
+}.photo-legacy .pb-8 {
+  padding-bottom: 2rem;
+}.photo-legacy .pt-12 {
+  padding-top: 3rem;
+}.photo-legacy .pt-3 {
+  padding-top: 0.75rem;
+}.photo-legacy .pt-4 {
+  padding-top: 1rem;
+}.photo-legacy .text-left {
+  text-align: left;
+}.photo-legacy .text-center {
+  text-align: center;
+}.photo-legacy .text-right {
+  text-align: right;
+}.photo-legacy .font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}.photo-legacy .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}.photo-legacy .text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}.photo-legacy .text-\[10px\] {
+  font-size: 10px;
+}.photo-legacy .text-\[9px\] {
+  font-size: 9px;
+}.photo-legacy .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}.photo-legacy .text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}.photo-legacy .text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}.photo-legacy .text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}.photo-legacy .text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}.photo-legacy .font-light {
+  font-weight: 300;
+}.photo-legacy .font-medium {
+  font-weight: 500;
+}.photo-legacy .font-semibold {
+  font-weight: 600;
+}.photo-legacy .uppercase {
+  text-transform: uppercase;
+}.photo-legacy .tabular-nums {
+  --tw-numeric-spacing: tabular-nums;
+  font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}.photo-legacy .leading-7 {
+  line-height: 1.75rem;
+}.photo-legacy .leading-relaxed {
+  line-height: 1.625;
+}.photo-legacy .tracking-\[0\.05em\] {
+  letter-spacing: 0.05em;
+}.photo-legacy .tracking-\[0\.12em\] {
+  letter-spacing: 0.12em;
+}.photo-legacy .tracking-\[0\.15em\] {
+  letter-spacing: 0.15em;
+}.photo-legacy .tracking-\[0\.1em\] {
+  letter-spacing: 0.1em;
+}.photo-legacy .tracking-\[0\.2em\] {
+  letter-spacing: 0.2em;
+}.photo-legacy .tracking-\[0\.3em\] {
+  letter-spacing: 0.3em;
+}.photo-legacy .tracking-\[0\.5em\] {
+  letter-spacing: 0.5em;
+}.photo-legacy .tracking-wide {
+  letter-spacing: 0.025em;
+}.photo-legacy .tracking-wider {
+  letter-spacing: 0.05em;
+}.photo-legacy .tracking-widest {
+  letter-spacing: 0.1em;
+}.photo-legacy .text-\[\#1c2e42\] {
+  --tw-text-opacity: 1;
+  color: rgb(28 46 66 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#2c2a27\] {
+  --tw-text-opacity: 1;
+  color: rgb(44 42 39 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#3d3326\] {
+  --tw-text-opacity: 1;
+  color: rgb(61 51 38 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#4b6a8a\] {
+  --tw-text-opacity: 1;
+  color: rgb(75 106 138 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#5c554a\] {
+  --tw-text-opacity: 1;
+  color: rgb(92 85 74 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#737578\] {
+  --tw-text-opacity: 1;
+  color: rgb(115 117 120 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#8c8273\] {
+  --tw-text-opacity: 1;
+  color: rgb(140 130 115 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#a38b6c\] {
+  --tw-text-opacity: 1;
+  color: rgb(163 139 108 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-\[\#a39b90\] {
+  --tw-text-opacity: 1;
+  color: rgb(163 155 144 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-amber-500 {
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}.photo-legacy .text-white\/30 {
+  color: rgb(255 255 255 / 0.3);
+}.photo-legacy .text-white\/40 {
+  color: rgb(255 255 255 / 0.4);
+}.photo-legacy .text-white\/50 {
+  color: rgb(255 255 255 / 0.5);
+}.photo-legacy .text-white\/60 {
+  color: rgb(255 255 255 / 0.6);
+}.photo-legacy .text-white\/70 {
+  color: rgb(255 255 255 / 0.7);
+}.photo-legacy .text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
+}.photo-legacy .text-white\/85 {
+  color: rgb(255 255 255 / 0.85);
+}.photo-legacy .underline {
+  text-decoration-line: underline;
+}.photo-legacy .underline-offset-4 {
+  text-underline-offset: 4px;
+}.photo-legacy .placeholder-\[\#a39b90\]::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(163 155 144 / var(--tw-placeholder-opacity, 1));
+}.photo-legacy .placeholder-white\/30::placeholder {
+  color: rgb(255 255 255 / 0.3);
+}.photo-legacy .accent-\[\#2c2a27\] {
+  accent-color: #2c2a27;
+}.photo-legacy .opacity-0 {
+  opacity: 0;
+}.photo-legacy .opacity-100 {
+  opacity: 1;
+}.photo-legacy .opacity-40 {
+  opacity: 0.4;
+}.photo-legacy .shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.photo-legacy .shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.photo-legacy .shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.photo-legacy .blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}.photo-legacy .grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}.photo-legacy .grayscale-\[5\%\] {
+  --tw-grayscale: grayscale(5%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}.photo-legacy .sepia {
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}.photo-legacy .sepia-\[10\%\] {
+  --tw-sepia: sepia(10%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}.photo-legacy .filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}.photo-legacy .backdrop-blur {
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}.photo-legacy .backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}.photo-legacy .backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}.photo-legacy .backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}.photo-legacy .transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.photo-legacy .transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.photo-legacy .transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.photo-legacy .transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.photo-legacy .transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}.photo-legacy .duration-300 {
+  transition-duration: 300ms;
+}.photo-legacy .duration-500 {
+  transition-duration: 500ms;
+}.photo-legacy .duration-700 {
+  transition-duration: 700ms;
+}.photo-legacy .ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}.photo-legacy .ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}.photo-legacy .ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}.photo-legacy .selection\:bg-\[\#2c2a27\] *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 42 39 / var(--tw-bg-opacity, 1));
+}.photo-legacy .selection\:text-\[\#f7f4eb\] *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(247 244 235 / var(--tw-text-opacity, 1));
+}.photo-legacy .selection\:bg-\[\#2c2a27\]::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 42 39 / var(--tw-bg-opacity, 1));
+}.photo-legacy .selection\:text-\[\#f7f4eb\]::selection {
+  --tw-text-opacity: 1;
+  color: rgb(247 244 235 / var(--tw-text-opacity, 1));
+}.photo-legacy .hover\:-translate-y-1:hover {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.photo-legacy .hover\:rotate-0:hover {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.photo-legacy .hover\:border-\[\#2c2a27\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(44 42 39 / var(--tw-border-opacity, 1));
+}.photo-legacy .hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}.photo-legacy .hover\:border-white\/40:hover {
+  border-color: rgb(255 255 255 / 0.4);
+}.photo-legacy .hover\:bg-\[\#5c554a\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 85 74 / var(--tw-bg-opacity, 1));
+}.photo-legacy .hover\:bg-\[\#f0f4f8\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 244 248 / var(--tw-bg-opacity, 1));
+}.photo-legacy .hover\:bg-\[\#faf8f5\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 248 245 / var(--tw-bg-opacity, 1));
+}.photo-legacy .hover\:bg-\[\#fdf7eb\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 247 235 / var(--tw-bg-opacity, 1));
+}.photo-legacy .hover\:bg-black\/50:hover {
+  background-color: rgb(0 0 0 / 0.5);
+}.photo-legacy .hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}.photo-legacy .hover\:text-\[\#2c2a27\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(44 42 39 / var(--tw-text-opacity, 1));
+}.photo-legacy .hover\:text-amber-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity, 1));
+}.photo-legacy .hover\:text-gray-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}.photo-legacy .hover\:text-red-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+}.photo-legacy .hover\:text-red-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}.photo-legacy .hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}.photo-legacy .hover\:text-white\/80:hover {
+  color: rgb(255 255 255 / 0.8);
+}.photo-legacy .hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.photo-legacy .focus\:border-\[\#2c2a27\]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(44 42 39 / var(--tw-border-opacity, 1));
+}.photo-legacy .focus\:border-white\/50:focus {
+  border-color: rgb(255 255 255 / 0.5);
+}.photo-legacy .focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}.photo-legacy .group:hover .group-hover\:scale-105 {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.photo-legacy .group:hover .group-hover\:text-\[\#8c8273\] {
+  --tw-text-opacity: 1;
+  color: rgb(140 130 115 / var(--tw-text-opacity, 1));
+}.photo-legacy .group:hover .group-hover\:text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+}.photo-legacy .group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}@media (min-width: 640px) {
+
+  .photo-legacy .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .photo-legacy .sm\:p-8 {
+    padding: 2rem;
+  }
+}@media (min-width: 768px) {
+
+  .photo-legacy .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photo-legacy .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .photo-legacy .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .photo-legacy .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .photo-legacy .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .photo-legacy .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .photo-legacy .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .photo-legacy .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .photo-legacy .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .photo-legacy .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}@media (min-width: 1024px) {
+
+  .photo-legacy .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .photo-legacy .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .photo-legacy .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .photo-legacy .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .photo-legacy .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .photo-legacy .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+        .photo-legacy {
+            color-scheme: light; /* 基线；深色下由 html[data-theme="dark"] 覆盖 */
+        }
+
+        .photo-legacy {
+            font-family: 'Times New Roman', Times, 'Noto Serif SC', 'SimSun', 'Songti SC', serif;
+            background-color: #ffffff; /* Pure white background */
+            color: #2c2a27; /* Dark text for readability */
+            overflow-x: hidden;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Custom transitions for elegant darkroom feel */
+        .photo-legacy .vintage-transition {
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        /* Vignette overlay for a pinhole lens / classic camera vibe */
+        .photo-legacy .vignette {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, transparent 55%, rgba(0,0,0,0.05) 150%);
+            pointer-events: none;
+            z-index: 9998;
+        }
+
+        /* Polaroid 'Developing' Effect Animation for Guestbook */
+        @keyframes polaroidDevelop {
+            0% {
+                filter: blur(12px) contrast(0.1) brightness(2.0) grayscale(100%);
+                opacity: 0.3;
+            }
+            30% {
+                filter: blur(6px) contrast(0.4) brightness(1.5) sepia(40%);
+                opacity: 0.7;
+            }
+            100% {
+                filter: blur(0px) contrast(1) brightness(1) sepia(0%);
+                opacity: 1;
+            }
+        }
+
+        .photo-legacy .developing-card {
+            animation: polaroidDevelop 3.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        /* Custom scrollbar matching the light theme */
+        .photo-legacy ::-webkit-scrollbar {
+            width: 8px;
+        }
+        .photo-legacy ::-webkit-scrollbar-track {
+            background: #f5f4f0;
+        }
+        .photo-legacy ::-webkit-scrollbar-thumb {
+            background: #c5beb4;
+            border-radius: 4px;
+        }
+        .photo-legacy ::-webkit-scrollbar-thumb:hover {
+            background: #a39b90;
+        }
+
+    /* ===== 生日胶片条 Hero ===== */
+    .photo-legacy .birthday-hero {
+        display: none;
+    }
+    .photo-legacy .birthday-hero.active {
+        display: block;
+    }
+    .photo-legacy .film-strip-wrap {
+        overflow-x: auto;
+        padding: 40px 20px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .photo-legacy .film-strip-wrap::-webkit-scrollbar { height: 4px; }
+    .photo-legacy .film-strip-wrap::-webkit-scrollbar-thumb { background: #555; border-radius: 2px; }
+    .photo-legacy .film-strip {
+        display: flex;
+        gap: 0;
+        min-width: max-content;
+        margin: 0 auto;
+        background: rgba(62, 44, 28, 0.85);
+        border-radius: 4px;
+        padding: 28px 24px;
+        position: relative;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+    .photo-legacy .film-strip::before {
+        content: '';
+        position: absolute;
+        top: 6px; left: 24px; right: 24px;
+        height: 14px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent 0px, transparent 32px,
+            rgba(0,0,0,0.3) 32px, rgba(0,0,0,0.3) 40px,
+            transparent 40px, transparent 72px
+        );
+    }
+    .photo-legacy .film-strip::after {
+        content: '';
+        position: absolute;
+        bottom: 6px; left: 24px; right: 24px;
+        height: 14px;
+        background: repeating-linear-gradient(
+            90deg,
+            transparent 0px, transparent 32px,
+            rgba(0,0,0,0.3) 32px, rgba(0,0,0,0.3) 40px,
+            transparent 40px, transparent 72px
+        );
+    }
+    .photo-legacy .film-frame {
+        flex-shrink: 0;
+        width: 260px;
+        padding: 0 12px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+    .photo-legacy .film-frame.reveal {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .photo-legacy .film-frame-inner {
+        background: rgba(0,0,0,0.25);
+        padding: 4px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .photo-legacy .film-frame-inner:hover {
+        transform: scale(1.04);
+    }
+    .photo-legacy .film-frame img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        filter: grayscale(10%) sepia(5%);
+    }
+    .photo-legacy .gallery-card img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+    /* 生日灯箱 */
+    .photo-legacy #birthdayLightbox {
+        position: fixed;
+        inset: 0;
+        z-index: 10001;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.35s ease;
+        overflow: hidden;
+    }
+    .photo-legacy #birthdayLightbox.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .photo-legacy #birthdayLightbox .lb-emoji-bg {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 20px;
+        pointer-events: none;
+    }
+    .photo-legacy #birthdayLightbox .lb-emoji-bg span {
+        font-size: 40px;
+        animation: lbEmojiFloat 3s ease-in-out infinite;
+    }
+    @keyframes lbEmojiFloat {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-16px) rotate(15deg); }
+    }
+    .photo-legacy #birthdayLightbox .lb-photo-wrap {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        padding: 10px 10px 40px;
+        box-shadow: 0 12px 48px rgba(0,0,0,0.15);
+        border: 1px solid #e2dcd0;
+        max-width: 75vw;
+        max-height: 80vh;
+    }
+    .photo-legacy #birthdayLightbox .lb-photo-wrap img {
+        display: block;
+        max-width: 70vw;
+        max-height: 65vh;
+        object-fit: contain;
+    }
+    @media (max-width: 768px) {
+        .photo-legacy .film-frame { width: 200px; padding: 0 10px; }
+        .photo-legacy .film-strip { padding: 24px 18px; }
+        .photo-legacy .film-strip::before,.photo-legacy .film-strip::after { left: 18px; right: 18px; }
+    }
+    @media (max-width: 480px) {
+        .photo-legacy .film-frame { width: 160px; padding: 0 8px; }
+        .photo-legacy .film-strip { padding: 20px 12px; }
+        .photo-legacy .film-strip::before,.photo-legacy .film-strip::after { left: 12px; right: 12px; }
+        .photo-legacy #birthdayLightbox .lb-photo-wrap { padding: 6px 6px 24px; max-width: 90vw; }
+    }
+
+/* ===== 节日遮罩动画系统 ===== */
+
+    .photo-legacy .holiday-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 10000;
+        background: rgba(245, 244, 240, 0.5);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        will-change: opacity;
+        transition: opacity 0.7s ease-out, visibility 0s 0.7s;
+    }
+    .photo-legacy .holiday-overlay.active {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.6s ease-out, visibility 0s 0s;
+    }
+    .photo-legacy .holiday-overlay.fade-out {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.7s ease-in, visibility 0s 0.7s;
+    }
+
+    .photo-legacy .holiday-poster {
+        background: #fffdf9;
+        border: 1px solid #e2dcd0;
+        box-shadow:
+            0 4px 24px rgba(0,0,0,0.12),
+            0 20px 60px rgba(0,0,0,0.18),
+            inset 0 0 0 8px #fffdf9,
+            inset 0 0 0 9px #d4cdbc;
+        padding: 48px 40px 40px;
+        max-width: 420px;
+        width: 90%;
+        text-align: center;
+        position: relative;
+        cursor: default;
+        opacity: 0;
+        transform: scale(0.85) translateY(20px);
+        transition: opacity 0.7s cubic-bezier(0.25, 1, 0.5, 1) 0.25s,
+                    transform 0.7s cubic-bezier(0.25, 1, 0.5, 1) 0.25s;
+    }
+    .photo-legacy .holiday-overlay.active .holiday-poster {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+    .photo-legacy .holiday-poster::before {
+        content: '';
+        position: absolute;
+        top: 16px; left: 24px; right: 24px;
+        height: 2px;
+        background: repeating-linear-gradient(
+            90deg,
+            #e2dcd0 0px,
+            #e2dcd0 8px,
+            transparent 8px,
+            transparent 16px
+        );
+    }
+    .photo-legacy .holiday-poster::after {
+        content: '';
+        position: absolute;
+        bottom: 16px; left: 24px; right: 24px;
+        height: 2px;
+        background: repeating-linear-gradient(
+            90deg,
+            #e2dcd0 0px,
+            #e2dcd0 8px,
+            transparent 8px,
+            transparent 16px
+        );
+    }
+
+    .photo-legacy .holiday-poster .poster-emoji {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        margin-top: 28px;
+    }
+    .photo-legacy .holiday-poster .poster-emoji svg {
+        display: block;
+        width: 86px;
+        height: auto;
+    }
+    .photo-legacy .holiday-poster .poster-title {
+        font-family: 'Noto Serif SC', serif;
+        font-size: 28px;
+        font-weight: 300;
+        color: #2c2a27;
+        letter-spacing: 0.12em;
+        margin-bottom: 8px;
+    }
+    .photo-legacy .holiday-poster .poster-sub {
+        font-size: 13px;
+        color: #8c8273;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+    .photo-legacy .holiday-poster .poster-hint {
+        font-size: 11px;
+        color: #bfb9ab;
+        letter-spacing: 0.25em;
+        margin-top: 20px;
+        animation: hintBlink 2.5s ease-in-out infinite;
+    }
+    @keyframes hintBlink {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 1; }
+    }
+    .photo-legacy .holiday-poster .poster-line {
+        width: 40px;
+        height: 1px;
+        background: #d4cdbc;
+        margin: 16px auto;
+    }
+
+    /* ===== 画廊翻页动画 ===== */
+    .photo-legacy #photoGrid.transitioning {
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    }
+    .photo-legacy #photoGrid {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.35s ease-in, transform 0.35s ease-in;
+    }
+    .photo-legacy #photoGrid .gallery-card {
+        animation: cardFadeIn 0.4s ease-out both;
+    }
+    .photo-legacy #photoGrid .gallery-card:nth-child(1) { animation-delay: 0.05s; }
+    .photo-legacy #photoGrid .gallery-card:nth-child(2) { animation-delay: 0.1s; }
+    .photo-legacy #photoGrid .gallery-card:nth-child(3) { animation-delay: 0.15s; }
+    .photo-legacy #photoGrid .gallery-card:nth-child(4) { animation-delay: 0.2s; }
+    .photo-legacy #photoGrid .gallery-card:nth-child(5) { animation-delay: 0.25s; }
+    .photo-legacy #photoGrid .gallery-card:nth-child(6) { animation-delay: 0.3s; }
+    @keyframes cardFadeIn {
+        from { opacity: 0; transform: translateY(12px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 留言簿翻页动画 */
+    .photo-legacy #messageBoard.transitioning {
+        opacity: 0;
+        transform: translateY(6px);
+        transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    }
+    .photo-legacy #messageBoard {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.35s ease-in, transform 0.35s ease-in;
+    }
+    .photo-legacy #messageBoard .message-card {
+        animation: msgFadeIn 0.35s ease-out both;
+    }
+    .photo-legacy .message-card:nth-child(1) { animation-delay: 0.03s; }
+    .photo-legacy .message-card:nth-child(2) { animation-delay: 0.08s; }
+    .photo-legacy .message-card:nth-child(3) { animation-delay: 0.13s; }
+    .photo-legacy .message-card:nth-child(4) { animation-delay: 0.18s; }
+    .photo-legacy .message-card:nth-child(5) { animation-delay: 0.23s; }
+    .photo-legacy .message-card:nth-child(6) { animation-delay: 0.28s; }
+    @keyframes msgFadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== 目的地横向方波时间轴 ===== */
+    .photo-legacy .timeline-track {
+        display: flex;
+        align-items: stretch;
+        min-width: max-content;
+        height: 340px;
+        padding: 0 20px;
+    }
+    .photo-legacy .tl-segment {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-shrink: 0;
+        width: 220px;
+    }
+    .photo-legacy .tl-segment.top {
+        justify-content: flex-start;
+    }
+    .photo-legacy .tl-segment.bottom {
+        justify-content: flex-end;
+    }
+    .photo-legacy .tl-card {
+        background: #fffdf9;
+        border: 1px solid #e2dcd0;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        border-radius: 4px;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .photo-legacy .tl-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+    }
+    .photo-legacy .tl-card .tl-img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 2px;
+        filter: grayscale(5%) sepia(10%);
+    }
+    .photo-legacy .tl-card .tl-info {
+        padding: 8px 4px 2px;
+    }
+    .photo-legacy .tl-card .tl-name {
+        font-size: 15px;
+        font-weight: 500;
+        color: #2c2a27;
+        letter-spacing: 0.06em;
+    }
+    .photo-legacy .tl-card .tl-date {
+        font-size: 11px;
+        color: #8c8273;
+        letter-spacing: 0.1em;
+        margin-top: 2px;
+    }
+    .photo-legacy .tl-card .tl-hint {
+        font-size: 10px;
+        color: #bfb9ab;
+        margin-top: 4px;
+        letter-spacing: 0.15em;
+    }
+    .photo-legacy .tl-connector {
+        flex-shrink: 0;
+        width: 70px;
+    }
+    .photo-legacy .tl-connector svg {
+        width: 100%;
+        height: 100%;
+    }
+    /* 时间轴滚动条：收细，别抢画面的视觉重心 */
+    .photo-legacy #timelineScroll {
+        scrollbar-width: thin;              /* Firefox */
+        scrollbar-color: #d6cfc2 transparent;
+    }
+    .photo-legacy #timelineScroll::-webkit-scrollbar {
+        height: 5px;
+    }
+    .photo-legacy #timelineScroll::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .photo-legacy #timelineScroll::-webkit-scrollbar-thumb {
+        background: #d6cfc2;
+        border-radius: 3px;
+    }
+    .photo-legacy #timelineScroll::-webkit-scrollbar-thumb:hover {
+        background: #b8ae9c;
+    }
+    .photo-legacy .tl-dot {
+        fill: #2c2a27;
+        stroke: #f7f5f0;
+        stroke-width: 2;
+    }
+    .photo-legacy .tl-line {
+        stroke: #c4b99a;
+        stroke-width: 1.2;
+        fill: none;
+    }
+
+    /* ===== 目的地详情遮罩 ===== */
+    .photo-legacy .dest-collage-grid {
+        display: grid;
+        gap: 4px;
+        aspect-ratio: 6 / 7;
+        background: #5a5a5a;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .photo-legacy .dest-collage-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.4s ease;
+    }
+    /* Dynamic grid layouts */
+    .photo-legacy .dest-collage-grid.cols-1 { grid-template-columns: 1fr; grid-template-rows: 1fr; }
+    .photo-legacy .dest-collage-grid.cols-2 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+    .photo-legacy .dest-collage-grid.cols-3 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+    .photo-legacy .dest-collage-grid.cols-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+    .photo-legacy .dest-collage-grid.cols-5 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
+    .photo-legacy .dest-collage-grid.cols-6 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
+    .photo-legacy .dest-collage-grid .span-2 { grid-column: span 2; }
+    /* 该目的地还没有照片时的空状态，避免露出裸灰块 */
+    .photo-legacy .dest-collage-empty {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255,255,255,0.4);
+        font-size: 15px;
+        letter-spacing: 0.15em;
+    }
+
+    .photo-legacy .dest-content h2 {
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: 0.08em;
+        margin-bottom: 4px;
+        color: #fff;
+    }
+    .photo-legacy .dest-content .dest-date {
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        color: rgba(255,255,255,0.5);
+        margin-bottom: 24px;
+        text-transform: uppercase;
+    }
+    .photo-legacy .dest-content p {
+        font-size: 14px;
+        line-height: 1.9;
+        color: rgba(255,255,255,0.8);
+        margin-bottom: 16px;
+        letter-spacing: 0.04em;
+    }
+    .photo-legacy .dest-content .dest-inline-img {
+        width: 100%;
+        max-height: 280px;
+        object-fit: cover;
+        border-radius: 3px;
+        margin: 12px 0 20px;
+        opacity: 0.9;
+    }
+    .photo-legacy .dest-content .dest-divider {
+        height: 1px;
+        background: rgba(255,255,255,0.15);
+        margin: 24px 0;
+    }
+
+    .photo-legacy .custom-scroll::-webkit-scrollbar { width: 3px; }
+    .photo-legacy .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 2px; }
+
+    /* ===== 瀑布 Emoji ===== */
+    .photo-legacy .waterfall-emojis {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        z-index: 30;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    .photo-legacy .waterfall-emoji {
+        position: absolute;
+        top: -40px;
+        font-size: 18px;
+        animation: emojiFall var(--dur) var(--delay) linear infinite;
+        opacity: 0;
+    }
+    @keyframes emojiFall {
+        0%   { opacity: 0; transform: translateY(0) translateX(0) rotate(0deg); }
+        3%   { opacity: 0.7; }
+        90%  { opacity: 0.6; }
+        100% { opacity: 0; transform: translateY(105vh) translateX(var(--drift)) rotate(var(--spin)); }
+    }
+
+        /* Instagram 社交按钮：标志性渐变 hover */
+        .photo-legacy .social-ig:hover {
+            background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            border-color: #dc2743;
+        }
+
+        /* ==================================================================
+           深色模式
+           通过 html[data-theme="dark"] 提高一级特异性，覆盖 Tailwind CDN
+           动态生成的任意值颜色类，因此 JS 动态渲染的卡片同样生效。
+           ================================================================== */
+        html.dark .photo-legacy {
+            --dk-bg:        #121110;
+            --dk-surface:   #1b1a17;
+            --dk-surface-2: #23211d;
+            --dk-surface-3: #2b2823;
+            --dk-border:    #302d28;
+            --dk-border-2:  #423e37;
+            --dk-text:      #e9e5dd;
+            --dk-text-2:    #b3aca1;
+            --dk-text-3:    #8b8478;
+            --dk-muted:     #6f6960;
+            color-scheme: dark;
+        }
+
+        html.dark .photo-legacy {
+            background-color: var(--dk-bg);
+            color: var(--dk-text);
+        }
+
+        /* ---------- 滚动条 ---------- */
+        html.dark .photo-legacy ::-webkit-scrollbar-track { background: #171614; }
+        html.dark .photo-legacy ::-webkit-scrollbar-thumb { background: #3d3933; }
+        html.dark .photo-legacy ::-webkit-scrollbar-thumb:hover { background: #55504a; }
+
+        /* ---------- 暗角在深色下减弱 ---------- */
+        html.dark .photo-legacy .vignette {
+            background: radial-gradient(circle, transparent 55%, rgba(0,0,0,0.4) 150%);
+        }
+
+        /* ================= 文字色 ================= */
+        html.dark .photo-legacy .text-\[\#2c2a27\]          { color: var(--dk-text); }
+        html.dark .photo-legacy .text-\[\#5c554a\]          { color: var(--dk-text-2); }
+        html.dark .photo-legacy .text-\[\#5c554a\]\/80      { color: var(--dk-text-2); }
+        html.dark .photo-legacy .text-\[\#8c8273\]          { color: #a89e8c; }
+        html.dark .photo-legacy .text-\[\#a38b6c\]          { color: #c9ab84; }
+        html.dark .photo-legacy .text-\[\#3d3326\]          { color: #d5cdc0; }
+        html.dark .photo-legacy .text-\[\#a39b90\]          { color: var(--dk-text-3); }
+        html.dark .photo-legacy .text-\[\#737578\]          { color: #9a9a9a; }
+        html.dark .photo-legacy .text-\[\#f7f4eb\]          { color: #f2efe7; }
+        /* 蓝晒留言卡 */
+        html.dark .photo-legacy .text-\[\#1c2e42\]          { color: #cfe0f0; }
+        html.dark .photo-legacy .text-\[\#4b6a8a\]          { color: #8fb4d6; }
+
+        /* ================= 边框色 ================= */
+        html.dark .photo-legacy .border-\[\#e2dcd0\]        { border-color: var(--dk-border); }
+        html.dark .photo-legacy .border-\[\#c5beb4\]        { border-color: var(--dk-border-2); }
+        html.dark .photo-legacy .border-\[\#d6cfc2\]        { border-color: #3a3730; }
+        html.dark .photo-legacy .border-\[\#d8cbb5\]        { border-color: #453f34; }
+        html.dark .photo-legacy .border-\[\#c5d0db\]        { border-color: #35506b; }
+        html.dark .photo-legacy .border-\[\#8c8e91\]\/30    { border-color: rgba(255,255,255,0.14); }
+        html.dark .photo-legacy .border-\[\#8c8e91\]\/20    { border-color: rgba(255,255,255,0.10); }
+
+        /* 主按钮边框在深色下反相为浅色 */
+        html.dark .photo-legacy .border-\[\#2c2a27\]        { border-color: var(--dk-text); }
+        html.dark .photo-legacy .hover\:border-\[\#2c2a27\]:hover { border-color: var(--dk-text); }
+        /* 反相按钮：浅底 + 深字 */
+        html.dark .photo-legacy .bg-\[\#2c2a27\]            { background-color: var(--dk-text); }
+        html.dark .photo-legacy .bg-\[\#2c2a27\].text-white,html.dark .photo-legacy .bg-\[\#2c2a27\] .text-white { color: #171614; }
+        html.dark .photo-legacy .hover\:bg-\[\#5c554a\]:hover { background-color: #cdc7bc; }
+        /* 分隔细线 */
+        html.dark .photo-legacy .bg-\[\#2c2a27\]\/50        { background-color: rgba(233,229,221,0.30); }
+
+        /* ================= 背景色 ================= */
+        html.dark .photo-legacy .bg-\[\#f5f4f0\]            { background-color: #171614; }  /* 底片册区块 */
+        html.dark .photo-legacy .bg-\[\#fafaf9\]            { background-color: var(--dk-surface); }
+        html.dark .photo-legacy .bg-\[\#fffdf9\]            { background-color: var(--dk-surface); }
+        html.dark .photo-legacy .bg-\[\#f7f5f0\]            { background-color: var(--dk-surface); }
+        html.dark .photo-legacy .bg-\[\#faf8f5\]            { background-color: var(--dk-surface-2); }
+        html.dark .photo-legacy .bg-\[\#fdf7eb\]            { background-color: #332a1c; }
+        html.dark .photo-legacy .bg-\[\#faf0dc\]            { background-color: #2b2418; }
+        html.dark .photo-legacy .bg-\[\#e8edf2\]            { background-color: #16222e; }
+        html.dark .photo-legacy .bg-\[\#f0f4f8\]            { background-color: #1b2937; }
+        html.dark .photo-legacy .bg-\[\#7c7c7c\]            { background-color: #4a4a4a; }
+        /* 遮罩层（灯箱 / 弹窗） */
+        html.dark .photo-legacy .bg-\[\#737578\]            { background-color: #0d0c0b; }
+        /* 页脚 */
+        html.dark .photo-legacy .bg-\[\#5e6063\]            { background-color: #171614; }
+        /* 底片册卡片图片悬停遮罩 */
+        html.dark .photo-legacy .bg-\[\#2c2a27\]\/15        { background-color: rgba(0,0,0,0.45); }
+        /* 卡片 film/digital 标识 */
+        html.dark .photo-legacy .bg-\[\#9c9c9c\]\/85        { background-color: rgba(255,255,255,0.14); }
+
+        /* ---------- 纯 Tailwind 颜色类 ---------- */
+        html.dark .photo-legacy .bg-white                   { background-color: var(--dk-surface); }
+        html.dark .photo-legacy .bg-stone-100               { background-color: var(--dk-surface-2); }
+        html.dark .photo-legacy .bg-stone-300               { background-color: var(--dk-surface-2); }
+        html.dark .photo-legacy .bg-zinc-200                { background-color: var(--dk-surface-2); }
+        html.dark .photo-legacy .bg-white\/80               { background-color: rgba(27,26,23,0.85); }
+        html.dark .photo-legacy .bg-white\/90               { background-color: rgba(255,255,255,0.08); }
+        html.dark .photo-legacy .bg-white\/95               { background-color: rgba(18,17,16,0.88); }
+        html.dark .photo-legacy .border-gray-200            { border-color: #35322c; }
+        html.dark .photo-legacy .text-gray-300              { color: #6b675f; }
+        html.dark .photo-legacy .hover\:bg-\[\#f5f4f0\]:hover { background-color: var(--dk-surface-2); }
+        html.dark .photo-legacy .hover\:bg-\[\#faf8f5\]:hover { background-color: var(--dk-surface-3); }
+        html.dark .photo-legacy .hover\:bg-black:hover      { background-color: #f2efe7; }
+        html.dark .photo-legacy .hover\:border-black:hover  { border-color: #f2efe7; }
+        html.dark .photo-legacy .hover\:border-\[\#c5beb4\]:hover { border-color: #5a554c; }
+
+        /* ================= 表单控件 ================= */
+        html.dark .photo-legacy .placeholder-\[\#a39b90\]::placeholder { color: var(--dk-muted); }
+        html.dark .photo-legacy .accent-\[\#2c2a27\]        { accent-color: var(--dk-text); }
+        html.dark .photo-legacy input,html.dark .photo-legacy textarea,html.dark .photo-legacy select {
+            color-scheme: dark;
+        }
+
+        /* ================= 照片观感微调 ================= */
+        html.dark .photo-legacy .gallery-card img,html.dark .photo-legacy .film-frame img {
+            filter: brightness(0.94) contrast(1.02);
+        }
+
+        /* 深色下阴影不可见，改用描边区分层次 */
+        html.dark .photo-legacy .shadow-xl,html.dark .photo-legacy .shadow-2xl {
+            box-shadow: 0 10px 30px -12px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.04);
+        }
+
+
+        /* ============ 自定义组件的深色适配 ============ */
+
+        /* 目的地时间轴卡片 */
+        html.dark .photo-legacy .tl-card {
+            background: var(--dk-surface);
+            border-color: var(--dk-border);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+        }
+        html.dark .photo-legacy .tl-card:hover {
+            box-shadow: 0 12px 28px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.06);
+        }
+        html.dark .photo-legacy .tl-card .tl-name { color: var(--dk-text); }
+        html.dark .photo-legacy .tl-card .tl-date { color: #a89e8c; }
+        html.dark .photo-legacy .tl-card .tl-hint { color: var(--dk-muted); }
+        html.dark .photo-legacy .tl-dot  { fill: var(--dk-text); stroke: var(--dk-bg); }
+        html.dark .photo-legacy .tl-line { stroke: #5c5548; }
+        html.dark .photo-legacy #timelineScroll { scrollbar-color: var(--dk-border-2) transparent; }
+        html.dark .photo-legacy #timelineScroll::-webkit-scrollbar-thumb { background: var(--dk-border-2); }
+        html.dark .photo-legacy #timelineScroll::-webkit-scrollbar-thumb:hover { background: #55504a; }
+
+        /* 节日海报遮罩 */
+        html.dark .photo-legacy .holiday-overlay {
+            background: rgba(18, 17, 16, 0.6);
+        }
+        html.dark .photo-legacy .holiday-poster {
+            background: var(--dk-surface);
+            border-color: var(--dk-border);
+            box-shadow:
+                0 4px 24px rgba(0,0,0,0.5),
+                0 20px 60px rgba(0,0,0,0.6);
+        }
+        html.dark .photo-legacy .holiday-poster .poster-title { color: var(--dk-text); }
+        html.dark .photo-legacy .holiday-poster .poster-sub   { color: #a89e8c; }
+        html.dark .photo-legacy .holiday-poster .poster-hint  { color: var(--dk-muted); }
+        html.dark .photo-legacy .holiday-poster .poster-line  { background: #3d3933; }
+
+        /* 生日灯箱 */
+        html.dark .photo-legacy #birthdayLightbox { background: var(--dk-bg); }
+        html.dark .photo-legacy #birthdayLightbox .lb-photo-wrap {
+            background: var(--dk-surface);
+            box-shadow: 0 12px 48px rgba(0,0,0,0.7);
+        }
+
+        /* 目的地详情拼贴网格 */
+        html.dark .photo-legacy .dest-collage-grid { background: var(--dk-surface-2); }
+
+        /* 表单聚焦态 */
+        html.dark .photo-legacy .focus\:border-\[\#2c2a27\]:focus { border-color: var(--dk-text-2); }
+
+
+        /* ============ 遮罩层修正 ============
+           浅色下 #737578 是中灰底，里面直接放白字/白按钮。
+           深色下若压成纯黑，白按钮会被反相成深色，与底色糊在一起。
+           因此：弹窗保持"深灰底"（白字、浅色按钮仍可读），
+           灯箱则用近黑底（看照片更沉）。 */
+        html.dark .photo-legacy .bg-\[\#737578\] { background-color: #3a3733; }
+        html.dark .photo-legacy #lightbox { background-color: #0f0e0d; }
+
+        /* 登录弹窗的白色主按钮在深色下仍保持浅色 */
+        html.dark .photo-legacy #loginModal .bg-white { background-color: var(--dk-text); }
+        html.dark .photo-legacy #loginModal .bg-white.text-\[\#2c2a27\] { color: #171614; }
+        html.dark .photo-legacy #loginModal .hover\:bg-gray-200:hover { background-color: #cdc7bc; }
+
+        /* 留言详情卡在深色遮罩上保持可辨 */
+        html.dark .photo-legacy #messageModal > div > .bg-white {
+            box-shadow: 0 20px 50px rgba(0,0,0,0.75), 0 0 0 1px rgba(255,255,255,0.05);
+        }
+
+
+
+.photo-legacy #lightbox{background:#737578;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;-webkit-overflow-scrolling:touch;touch-action:pan-y pinch-zoom;box-sizing:border-box}
+html.dark .photo-legacy #lightbox{background:#0f0e0d}
+.photo-legacy #lightbox .album-lightbox-layout{box-sizing:border-box;width:100%;max-width:1440px;min-height:100vh;min-height:100dvh;margin:auto;padding:72px 72px;display:grid;grid-template-columns:minmax(0,1fr) 320px;align-items:center;gap:56px}
+.photo-legacy #lightbox .album-lightbox-photo{position:relative;display:flex;justify-content:center;align-items:center;min-width:0;height:calc(100vh - 144px);height:calc(100dvh - 144px)}
+.photo-legacy #lightboxImg{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 12px 44px #0003}
+.photo-legacy #lightbox .album-lightbox-info{min-width:0;width:100%;max-height:calc(100vh - 144px);max-height:calc(100dvh - 144px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;color:#fff;line-height:1.8;padding-right:8px;overflow-wrap:anywhere}
+.photo-legacy #lightbox .album-lightbox-info>div+div{margin-top:24px}
+.photo-legacy #lightboxFilm{font-size:10px;letter-spacing:.18em;margin-bottom:12px;padding:5px 10px;line-height:1.4}
+.photo-legacy #lightboxTitle{font-size:28px;line-height:1.4;letter-spacing:.06em;text-wrap:pretty}
+.photo-legacy #lightboxLocation{font-size:12px;line-height:1.9;margin-top:10px;color:#ffffffb3}
+.photo-legacy #lightboxCoordinates{font-size:11px;line-height:1.8;margin-top:8px;color:#ffffff99;letter-spacing:.02em}
+.photo-legacy #lightbox .album-lightbox-exif{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 24px;font-size:13px;line-height:1.6}
+.photo-legacy #lightbox .album-lightbox-exif>div>span:first-child{font-size:10px;letter-spacing:.12em;color:#ffffff80;margin-bottom:6px}
+.photo-legacy #lightbox .album-lightbox-exif>div>span:last-child{overflow-wrap:anywhere}
+.photo-legacy #lightbox .album-lightbox-story{border-top:1px solid #ffffff26;padding-top:24px;color:#ffffffb3;font-size:14px;line-height:1.9}
+.photo-legacy #lightboxDesc{white-space:pre-wrap;overflow-wrap:anywhere;margin-top:10px}
+.photo-legacy #lightbox .album-lightbox-close{position:fixed;top:max(18px,env(safe-area-inset-top));right:max(20px,env(safe-area-inset-right));width:44px;height:44px;border:1px solid #ffffff26;border-radius:50%;background:#171614d9;color:#ffffffd9;font-size:24px;line-height:1;z-index:60;display:grid;place-items:center;cursor:pointer}
+.photo-legacy #lightbox .lightbox-page-control{width:44px;height:44px;padding:0;display:grid;place-items:center;font-size:20px;background:#17161499;border:1px solid #ffffff26;color:#fff;z-index:2}
+.photo-legacy #lightbox button:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.photo-legacy #lightbox .album-lightbox-info:focus-visible{outline:1px solid #ffffff80;outline-offset:8px}
+@media(max-width:1000px) and (min-width:768px){.photo-legacy #lightbox .album-lightbox-layout{padding:72px 32px;grid-template-columns:minmax(0,1fr) 260px;gap:28px}.photo-legacy #lightboxTitle{font-size:24px}}
+@media(max-width:767px){.photo-legacy #lightbox .album-lightbox-layout{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:28px;padding:72px 20px max(36px,env(safe-area-inset-bottom))}.photo-legacy #lightbox .album-lightbox-photo{height:auto;min-height:0;flex:none}.photo-legacy #lightboxImg{max-height:56vh;max-height:56dvh;max-width:100%;width:auto;height:auto;margin:auto}.photo-legacy #lightbox .album-lightbox-info{max-height:none;overflow:visible;padding:0}.photo-legacy #lightboxTitle{font-size:24px}.photo-legacy #lightbox .album-lightbox-close{top:max(14px,env(safe-area-inset-top));right:16px}.photo-legacy #lightbox .album-lightbox-exif{gap:20px 24px}.photo-legacy #lightbox .album-lightbox-info>div+div{margin-top:22px}}
+@media(max-height:500px) and (min-width:768px){.photo-legacy #lightbox .album-lightbox-layout{padding-top:64px;padding-bottom:32px}.photo-legacy #lightbox .album-lightbox-photo{height:calc(100dvh - 96px)}.photo-legacy #lightbox .album-lightbox-info{max-height:calc(100dvh - 96px)}}
+
+
+.photo-legacy #destDetail,.photo-legacy #destDetail{background:#7c7c7c!important;color:white}.photo-legacy #destDetail .album-destination-close{position:absolute;right:max(20px,env(safe-area-inset-right));top:max(18px,env(safe-area-inset-top));width:44px;height:44px;padding:10px;display:grid;place-items:center;background:transparent;border:0;color:white;cursor:pointer;z-index:3}.photo-legacy #destDetail,.photo-legacy #destDetail *{box-sizing:border-box}.photo-legacy #destDetail [hidden]{display:none!important}.photo-legacy #destDetail button svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}.photo-legacy #destDetail .album-destination-dialog{height:100%;max-width:1100px;margin:auto;padding:56px 64px 30px;display:flex;flex-direction:column;justify-content:center;gap:18px}.photo-legacy #destDetail .album-destination-viewer{position:relative;min-height:0}.photo-legacy #destCollage{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;width:100%;height:min(65vh,720px,calc(100dvh - 250px));align-items:center}.photo-legacy #destCollage::-webkit-scrollbar{display:none}.photo-legacy #destCollage figure{margin:0;flex:0 0 100%;height:100%;scroll-snap-align:center;display:flex;align-items:center;justify-content:center}.photo-legacy #destCollage img{width:100%;height:100%;object-fit:contain}.photo-legacy #destCollage>p{text-align:center;width:100%}.photo-legacy #destDetail .album-destination-prev,.photo-legacy #destDetail .album-destination-next{position:absolute;top:50%;transform:translateY(-50%);display:grid;place-items:center;padding:0;background:#0003;color:white;border:0;border-radius:50%;width:42px;height:42px;font-size:32px;z-index:2;cursor:pointer}.photo-legacy .album-destination-prev{left:-50px}.photo-legacy .album-destination-next{right:-50px}.photo-legacy #destContent{text-align:center;overflow:visible;padding:0;color:white}.photo-legacy #destContent h2{font-size:26px;margin:0 0 8px;font-weight:400}.photo-legacy #destContent .dest-date{margin:0 0 14px;font:13px Georgia;letter-spacing:.15em;color:#fffc}.photo-legacy #destContent a{display:inline-block;color:white;border:1px solid #fff7;padding:9px 20px;font-size:13px;text-decoration:none}@media(max-width:600px){.photo-legacy #destDetail .album-destination-dialog{padding:60px 24px 24px}.photo-legacy .album-destination-prev{left:0}.photo-legacy .album-destination-next{right:0}}
+
+.photo-legacy .photo-brand-account{display:flex;align-items:center;gap:16px;min-width:0}.photo-legacy .photo-header-identity{display:flex;align-items:center;gap:9px;color:rgba(255,255,255,.75);font-size:12px;letter-spacing:.06em;max-width:180px}.photo-legacy .photo-header-identity.hidden{display:none}.photo-legacy .photo-header-identity #loginIndicator{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.photo-legacy .photo-header-identity .roy-account-avatar{width:28px;height:28px;background-color:rgba(255,255,255,.14);color:white;font-size:11px}.photo-legacy .photo-social-link svg{flex:none}.photo-legacy #photoGrid{display:flex!important;gap:0!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#c5beb4 transparent;align-items:flex-start;touch-action:pan-x pan-y;cursor:grab}.photo-legacy #photoGrid.photo-dragging{scroll-snap-type:none;cursor:grabbing;user-select:none}.photo-legacy #photoGrid .gallery-page{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;flex:0 0 100%;min-width:0;box-sizing:border-box;padding:12px 5px 30px;scroll-snap-align:start;scroll-snap-stop:always}.photo-legacy #photoGrid .gallery-card{min-width:0;animation:none}.photo-legacy #photoGrid .gallery-card img{aspect-ratio:3/2;object-fit:cover}.photo-legacy #photoGrid .gallery-card img{user-select:none;-webkit-user-drag:none}.photo-legacy .lightbox-page-control{z-index:10;opacity:1;transition:opacity .25s,background-color .2s}.photo-legacy #lightbox.photo-controls-hidden .lightbox-page-control{opacity:0;pointer-events:none}.photo-legacy #lightbox .lightbox-page-control:focus-visible{opacity:1;pointer-events:auto;outline:2px solid white;outline-offset:3px}.photo-legacy .message-card{scroll-margin-top:155px}.photo-legacy .pagination-row{flex-wrap:wrap}
+@media(min-width:768px) and (max-width:1023px){.photo-legacy #photoGrid .gallery-page{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}}
+@media(max-width:767px){.photo-legacy #gallery-section{padding-top:1.5rem;padding-bottom:1.5rem}.photo-legacy #gallery-section .text-center.space-y-3{margin-bottom:1rem}.photo-legacy #photoGrid .gallery-page{grid-template-columns:minmax(0,1fr);gap:1rem;padding:8px 4px 18px}.photo-legacy #photoGrid .gallery-card{padding:10px 12px 12px}.photo-legacy #photoGrid .gallery-card img{width:100%;height:clamp(120px,calc((100svh - 460px)/2),260px);aspect-ratio:auto}.photo-legacy #photoGrid .gallery-card .mt-4{margin-top:10px}.photo-legacy .gallery-pagination{margin-top:10px;padding-top:12px}.photo-legacy .photo-header-identity{max-width:170px}.photo-legacy .photo-social-links{gap:12px}.photo-legacy .message-card{scroll-margin-top:145px}}
+@media(prefers-reduced-motion:reduce){.photo-legacy .lightbox-page-control{transition:none}.photo-legacy #photoGrid{scroll-behavior:auto}}
+.photo-legacy .photo-social-links{grid-template-columns:repeat(4,minmax(0,1fr))!important;max-width:480px;gap:14px}.photo-legacy .photo-social-link{aspect-ratio:1;flex-direction:column;padding:14px 6px;gap:12px;letter-spacing:.05em}.photo-legacy .photo-social-link svg{width:23px;height:23px}@media(max-width:767px){.photo-legacy .photo-social-links{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px;max-width:360px}.photo-legacy .photo-social-link{font-size:11px;gap:10px}}
+.photo-legacy .gallery-pagination{display:flex;align-items:center;justify-content:center;gap:22px;padding:12px 0 2px;margin-top:0;border:0}.photo-legacy .gallery-pagination button{width:32px;height:32px;display:grid;place-items:center;font-size:22px;line-height:1;color:inherit;border:1px solid #c5beb4;border-radius:2px;transition:opacity .2s,background .2s}.photo-legacy .gallery-pagination button:disabled{opacity:.25;cursor:default}.photo-legacy .gallery-pagination button:not(:disabled):hover{background:#8c82731a}.photo-legacy .gallery-page-indicator{display:inline-flex;gap:10px;align-items:baseline;font-size:11px;letter-spacing:.12em;font-variant-numeric:tabular-nums}.photo-legacy .gallery-page-indicator strong{font-size:13px;font-weight:500}.photo-legacy .gallery-page-indicator>span{opacity:.5}@media(max-width:767px){.photo-legacy #gallery-section{padding-top:16px;padding-bottom:16px}.photo-legacy #filterBar{margin-bottom:16px}.photo-legacy #photoGrid .gallery-card img{height:clamp(110px,calc((100svh - 540px)/2),240px)}.photo-legacy .message-card{scroll-margin-top:145px}}
+/* Gallery thumbnails keep a consistent 4:3 frame on every screen. */
+.photo-legacy #photoGrid .gallery-card img{aspect-ratio:4/3;height:auto!important;object-fit:cover}
+
+/* Flat album cards avoid shadows being clipped into dark bands at carousel edges. */
+.photo-legacy #photoGrid .gallery-card,.photo-legacy #photoGrid .gallery-card:hover{box-shadow:none!important}
+
+/* Guestbook: compact paper notes, with a single quiet divider for the actions. */
+.photo-legacy #messageBoard{gap:16px;padding-top:16px;align-items:stretch}
+.photo-legacy #messageBoard .photo-message-card{--note-paper:#fffdf9;--note-ink:#2c2a27;--note-muted:#8c8273;--note-line:#e2dcd0;display:flex;flex-direction:column;min-width:0;padding:20px;background:var(--note-paper);color:var(--note-ink);border:1px solid var(--note-line);border-radius:4px;box-shadow:none;position:relative;transition:border-color .2s}
+.photo-legacy #messageBoard .photo-message-card[data-paper=vintage]{--note-paper:#faf0dc;--note-ink:#3d3326;--note-muted:#8b7558;--note-line:#d8cbb5}
+.photo-legacy #messageBoard .photo-message-card[data-paper=cyanotype]{--note-paper:#e8edf2;--note-ink:#1c2e42;--note-muted:#4b6a8a;--note-line:#c5d0db}
+.photo-legacy #messageBoard .photo-message-card:hover{border-color:color-mix(in srgb,var(--note-muted) 65%,var(--note-line));transform:none;box-shadow:none}
+.photo-legacy #messageBoard .photo-message-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;min-width:0}
+.photo-legacy #messageBoard .photo-message-author{display:flex;align-items:center;gap:9px;min-width:0;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer}
+.photo-legacy #messageBoard .photo-message-name{font-size:14px;font-weight:600;line-height:1.5;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:.01em}
+.photo-legacy #messageBoard [data-photo-avatar]{display:flex;flex:none}
+.photo-legacy #messageBoard .roy-photo-avatar{width:30px;height:30px;font-size:12px;margin:0;--roy-avatar-bg:color-mix(in srgb,var(--note-muted) 9%,transparent);--roy-avatar-fg:var(--note-muted)}
+.photo-legacy #messageBoard .photo-message-date{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex-wrap:wrap;flex:none;max-width:50%;font-size:11px;line-height:1.5;color:var(--note-muted);font-variant-numeric:tabular-nums;letter-spacing:0}
+.photo-legacy #messageBoard .photo-message-date i{font-size:10px}
+.photo-legacy #messageBoard .photo-message-time{opacity:.8}
+.photo-legacy #messageBoard .photo-message-body{font-size:15px;line-height:1.8;font-weight:400;letter-spacing:.01em;overflow-wrap:anywhere;white-space:pre-wrap;margin:16px 0 18px;min-height:0;max-height:220px;overflow:hidden;cursor:pointer}
+.photo-legacy #messageBoard .photo-message-body>:first-child{margin-top:0}
+.photo-legacy #messageBoard .photo-message-body>:last-child{margin-bottom:0}
+.photo-legacy #messageBoard .photo-message-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px 12px;margin-top:auto;padding-top:10px;border-top:1px solid color-mix(in srgb,var(--note-muted) 14%,transparent);color:var(--note-muted);font-size:11px;line-height:1.5;letter-spacing:0}
+.photo-legacy #messageBoard .photo-message-actions{display:flex;align-items:center;gap:8px;flex:none}
+.photo-legacy #messageBoard .photo-message-actions button{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-width:32px;min-height:32px;padding:4px;border:0;border-radius:3px;background:none;color:inherit;font-size:11px;line-height:1;cursor:pointer;font-variant-numeric:tabular-nums}
+.photo-legacy #messageBoard .photo-message-actions i{font-size:13px}
+.photo-legacy #messageBoard .photo-message-actions button:hover{background:color-mix(in srgb,var(--note-muted) 8%,transparent);color:var(--note-ink)}
+.photo-legacy #messageBoard .photo-message-actions .is-liked{color:#a64b47}
+.photo-legacy #messageBoard .photo-message-place{display:flex;align-items:center;justify-content:flex-end;gap:5px;min-width:0;text-align:right;overflow-wrap:anywhere;flex:1}
+.photo-legacy #messageBoard .photo-message-place svg{flex:none}
+.photo-legacy #modalMainCard>div:first-child{gap:16px;flex-wrap:wrap}
+.photo-legacy #modalMainCard .photo-message-metadata{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:5px;font-size:11px;line-height:1.7}
+.photo-legacy #modalMainCard .photo-message-metadata svg{flex:none}
+.photo-legacy #messageBoard button:focus-visible{outline:2px solid var(--note-muted);outline-offset:4px}
+.photo-legacy #messageBoard .photo-message-developing{position:absolute;inset:0;display:grid;place-items:center;background:color-mix(in srgb,var(--note-paper) 90%,transparent);border-radius:inherit;font-size:12px;color:var(--note-muted);backdrop-filter:blur(4px)}
+@media(max-width:767px){.photo-legacy #messageBoard{gap:12px;padding-top:12px}.photo-legacy #messageBoard .photo-message-card{padding:16px}.photo-legacy #messageBoard .photo-message-body{margin:14px 0 16px;font-size:15px}.photo-legacy #messageBoard .photo-message-date{max-width:45%;gap:3px 6px}.photo-legacy #messageBoard .photo-message-actions button{min-width:36px;min-height:36px}.photo-legacy #messageBoard .photo-message-place{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.photo-legacy #messageBoard .photo-message-card{animation:none!important;transition:none}}
+
+/* Full-bleed album cover. Content markers remain owned by the album editor. */
+.photo-legacy #photo-site-header{position:absolute;inset:0 0 auto;z-index:40;background:transparent!important;backdrop-filter:none;border:0;padding:28px clamp(24px,4.5vw,88px);color:white;transition:padding .3s}
+.photo-legacy #photo-site-header>div{max-width:none;flex-direction:row;gap:20px}
+.photo-legacy #photo-site-header nav{gap:32px}
+.photo-legacy #photo-site-header nav>*{margin:0;font-size:14px;letter-spacing:.12em;padding-block:10px;text-shadow:0 1px 12px #0005}
+.photo-legacy #photo-site-header.is-past-cover{position:fixed;background:transparent!important;-webkit-backdrop-filter:none;backdrop-filter:none;padding-block:12px;border-bottom:1px solid transparent;box-shadow:none}
+.photo-legacy #normalHero .photo-cover{position:relative;isolation:isolate;height:100vh;height:100svh;min-height:620px;width:100%;overflow:hidden;background:#363c40;color:#fff}
+.photo-legacy #normalHero .photo-cover-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 52%;z-index:-2}
+.photo-legacy #normalHero .photo-cover-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#080e182e 0%,transparent 30%,#080e1810 43%,#060c145c 72%,#060b13ba 100%),linear-gradient(90deg,#050b132e,transparent 70%)}
+.photo-legacy #normalHero .photo-cover-copy{position:absolute;left:clamp(24px,6vw,116px);bottom:clamp(130px,17vh,180px);max-width:min(620px,calc(100% - 48px));text-shadow:0 2px 24px #0002}
+.photo-legacy #normalHero .photo-cover-tag{display:block;font-size:clamp(14px,1vw,17px);letter-spacing:.25em;color:#ffffffe0;margin-bottom:22px}
+.photo-legacy #normalHero h1{font-size:clamp(36px,4.3vw,76px);font-weight:400;line-height:1.25;letter-spacing:.08em;color:white;margin:0 0 25px;text-wrap:balance}
+.photo-legacy #normalHero .photo-cover-quote{max-width:520px;font-size:clamp(16px,1.1vw,20px);font-weight:300;line-height:1.95;letter-spacing:.1em;color:#ffffffc9;margin:0;text-wrap:pretty}
+.photo-legacy #normalHero .photo-cover-footer{position:absolute;bottom:38px;left:clamp(24px,6vw,116px);right:clamp(24px,6vw,116px);display:flex;align-items:flex-end;justify-content:space-between;gap:24px;border-top:1px solid #ffffff3b;padding-top:20px}
+.photo-legacy #normalHero .photo-cover-caption{display:flex;gap:24px;font-size:clamp(12px,.8vw,14px);letter-spacing:.1em;color:#ffffffc9;line-height:1.6}
+.photo-legacy #normalHero .photo-cover-caption [data-admin=hero-gear]{font-family:ui-monospace,monospace;letter-spacing:.02em}
+.photo-legacy #normalHero .photo-cover-explore{display:flex;gap:25px;align-items:center;color:#fff;font-family:inherit;font-size:14px;line-height:1.6;letter-spacing:.14em;cursor:pointer;white-space:nowrap;background:transparent;border:0;padding:6px 0}
+.photo-legacy #normalHero .photo-cover-explore>span:last-child{font-family:Arial,sans-serif;font-size:24px;transition:transform .2s}
+.photo-legacy #normalHero .photo-cover-explore:hover>span:last-child{transform:translateY(4px)}
+.photo-legacy #photo-site-header button:focus-visible,.photo-legacy #normalHero button:focus-visible{outline:1px solid white;outline-offset:6px}
+.photo-legacy.photo-birthday-cover #photo-site-header{position:sticky;background:#101112!important}
+@media(min-width:1600px){.photo-legacy #normalHero .photo-cover-copy{bottom:19vh}}
+@media(max-width:767px){
+ .photo-legacy #photo-site-header{padding:18px 22px}.photo-legacy #photo-site-header>div{gap:12px}.photo-legacy #photo-site-header nav{gap:15px;white-space:nowrap}.photo-legacy #photo-site-header nav>*{font-size:12px;letter-spacing:.03em}.photo-legacy #photo-site-header .photo-brand-account{gap:8px}.photo-legacy #photo-site-header .photo-header-identity{display:none!important}
+ .photo-legacy #normalHero .photo-cover{min-height:600px}.photo-legacy #normalHero .photo-cover-image{object-position:53% center}
+ .photo-legacy #normalHero .photo-cover-copy{left:26px;bottom:155px;max-width:calc(100% - 52px)}.photo-legacy #normalHero .photo-cover-tag{font-size:12px;margin-bottom:18px;letter-spacing:.2em}.photo-legacy #normalHero h1{font-size:clamp(30px,7.6vw,48px);letter-spacing:.04em;margin-bottom:18px}.photo-legacy #normalHero .photo-cover-quote{font-size:14px;line-height:1.95;max-width:340px;letter-spacing:.06em}
+ .photo-legacy #normalHero .photo-cover-footer{left:26px;right:26px;bottom:max(24px,env(safe-area-inset-bottom));padding-top:18px;gap:14px}.photo-legacy #normalHero .photo-cover-caption{flex-direction:column;gap:6px;font-size:11px}.photo-legacy #normalHero .photo-cover-explore{font-size:12px;gap:12px}
+}
+@media(max-width:359px){.photo-legacy #photo-site-header nav{gap:10px}.photo-legacy #photo-site-header{padding-inline:16px}}
+@media(max-height:600px) and (min-width:768px){.photo-legacy #normalHero .photo-cover{min-height:480px}.photo-legacy #normalHero .photo-cover-copy{bottom:110px}.photo-legacy #normalHero h1{font-size:38px;margin-bottom:14px}.photo-legacy #normalHero .photo-cover-tag{margin-bottom:12px}.photo-legacy #normalHero .photo-cover-footer{bottom:20px}}
+@media(prefers-reduced-motion:reduce){.photo-legacy #photo-site-header,.photo-legacy #normalHero *{transition:none!important}}
+
+
+/* Shared with the main site's menu: a full-width surface, then staggered text. */
+.photo-legacy #photo-site-header .photo-menu{position:static;margin-left:auto}
+.photo-legacy #photo-site-header .photo-menu summary{position:relative;list-style:none;display:flex;align-items:center;justify-content:center;width:44px;min-height:44px;padding:8px 0;cursor:pointer;user-select:none;color:#ffffffe6}
+.photo-legacy #photo-site-header .photo-menu summary::-webkit-details-marker{display:none}
+.photo-legacy #photo-site-header .photo-menu summary:focus-visible{outline:1px solid #fff;outline-offset:5px;border-radius:3px}
+.photo-legacy .photo-menu-icon{width:24px;height:24px;overflow:visible}
+.photo-legacy .photo-menu-stroke{stroke:currentColor;stroke-width:1.6;stroke-linecap:round;transition:transform 120ms cubic-bezier(.4,0,.6,1)}
+.photo-legacy .photo-menu-shift{transition:transform 120ms cubic-bezier(.4,0,.6,1) 120ms}
+.photo-legacy .photo-menu-stroke-top{transform-origin:10px 7px}.photo-legacy .photo-menu-stroke-bottom{transform-origin:10px 13px}
+.photo-legacy .photo-menu.is-menu-open .photo-menu-shift-top{transform:translateY(3px)}.photo-legacy .photo-menu.is-menu-open .photo-menu-shift-bottom{transform:translateY(-3px)}
+.photo-legacy .photo-menu.is-menu-open .photo-menu-shift{transition-delay:0s}.photo-legacy .photo-menu.is-menu-open .photo-menu-stroke{transition-delay:120ms}
+.photo-legacy .photo-menu.is-menu-open .photo-menu-stroke-top{transform:rotate(45deg)}.photo-legacy .photo-menu.is-menu-open .photo-menu-stroke-bottom{transform:rotate(-45deg)}
+.photo-legacy #photo-site-header.is-menu-open{position:fixed;background:transparent!important;-webkit-backdrop-filter:none;backdrop-filter:none;border-color:transparent;box-shadow:none;transition:none}
+.photo-legacy #photo-site-header .photo-menu nav{position:absolute;top:100%;left:clamp(24px,4.5vw,88px);right:clamp(24px,4.5vw,88px);width:auto;max-width:none;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:12px 0;background:transparent;border:0;border-radius:0;box-shadow:none;visibility:hidden;pointer-events:none;transition:visibility 0s linear 540ms}
+.photo-legacy #photo-site-header .photo-menu.is-menu-open nav{visibility:visible;pointer-events:auto;transition:visibility 0s}
+.photo-legacy #photo-site-header .photo-menu:not([open]) nav{display:none}
+.photo-legacy #photo-site-header .photo-menu nav>button{width:100%;min-height:56px;margin:0;padding:12px;text-align:right;font-size:clamp(22px,1.6vw,28px);font-weight:500;letter-spacing:.06em;border:0;color:#ffffffd9;text-shadow:none;opacity:0;transform:translateY(-4px);transition:opacity 200ms cubic-bezier(.4,0,.6,1),transform 240ms cubic-bezier(.4,0,.6,1)}
+.photo-legacy #photo-site-header .photo-menu.is-menu-open nav>button{opacity:1;transform:translateY(0);transition-duration:240ms;transition-delay:calc(420ms + var(--menu-order,0)*20ms)}
+.photo-legacy #photo-site-header .photo-menu nav>button:nth-child(2){--menu-order:1}.photo-legacy #photo-site-header .photo-menu nav>button:nth-child(3){--menu-order:2}.photo-legacy #photo-site-header .photo-menu nav>button:nth-child(4){--menu-order:3}.photo-legacy #photo-site-header .photo-menu nav>button:nth-child(5){--menu-order:4}
+.photo-legacy #photo-site-header .photo-menu nav>button:hover{color:#fff}
+.photo-legacy .photo-nav-surface{position:fixed;inset:0 0 auto;height:var(--photo-menu-start,0px);z-index:39;box-sizing:border-box;visibility:hidden;overflow:hidden;pointer-events:none;background:rgba(22,22,23,.86);-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid transparent;transition:height 420ms cubic-bezier(.4,0,.6,1) 120ms,background-color 280ms ease,border-color 120ms linear 420ms,visibility 0s linear 540ms}
+/* Keep the same backdrop layer alive as the collapsed glass bar: no material swap. */
+.photo-legacy .photo-glass-bar .photo-nav-surface{visibility:visible;background:rgba(22,22,23,.72);border-bottom-color:#ffffff17;transition-delay:120ms,0s,420ms,0s}
+.photo-legacy .photo-nav-open .photo-nav-surface{visibility:visible;height:var(--photo-menu-height);background:rgba(22,22,23,.86);border-bottom-color:#ffffff18;transition-delay:0s}
+.photo-legacy .photo-nav-curtain{position:fixed;inset:0;z-index:38;background:#0000000f;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);opacity:0;visibility:hidden;pointer-events:none;transition:opacity 320ms cubic-bezier(.4,0,.6,1) 80ms,visibility 0s linear 540ms}
+.photo-legacy .photo-nav-open .photo-nav-curtain{opacity:1;visibility:visible;pointer-events:auto;transition-delay:80ms,0s}
+@media(max-width:767px){.photo-legacy #photo-site-header .photo-menu nav{left:22px;right:22px}.photo-legacy #photo-site-header .photo-menu nav>button{font-size:22px;min-height:54px}}
+@media(prefers-reduced-motion:reduce){.photo-legacy .photo-nav-surface,.photo-legacy .photo-nav-curtain,.photo-legacy .photo-menu-stroke,.photo-legacy .photo-menu-shift{transition:none!important}}
+
+.photo-legacy #about-section .photo-find-me{display:inline-flex;align-items:center;gap:16px;width:fit-content;min-height:44px;padding:8px 0;color:inherit;font-size:16px;letter-spacing:.12em;line-height:1.6;text-decoration:none;border-bottom:1px solid currentColor;transition:opacity .2s}
+.photo-legacy #about-section .photo-find-me svg{flex:none;transition:transform .2s}
+.photo-legacy #about-section .photo-find-me:hover{opacity:.7}.photo-legacy #about-section .photo-find-me:hover svg{transform:translate(2px,-2px)}
+.photo-legacy #about-section .photo-find-me:focus-visible{outline:2px solid currentColor;outline-offset:6px}
+@media(prefers-reduced-motion:reduce){.photo-legacy #about-section .photo-find-me,.photo-legacy #about-section .photo-find-me svg{transition:none}}
+
+/* Straight edges for the photography guestbook detail and reply controls. */
+.photo-legacy #messageModal :is(#modalMainCard,#modalReplies>div,#modalReplyForm,input,textarea,button,.roy-rich-frame,.roy-rich-preview,blockquote,pre,code){border-radius:0!important}
+
+/* Sidebar width, rather than viewport width, determines the composer layout. */
+.photo-legacy #guestbookForm :is(input,textarea,button,label,.roy-rich-frame,.roy-rich-preview),.photo-legacy #guestbook-section .message-card,.photo-legacy #guestbook-section .lg\:col-span-4{border-radius:0!important}
+.photo-legacy #guestbookForm .roy-rich-footer{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:10px;padding:10px 12px 12px}
+.photo-legacy #guestbookForm .roy-rich-meta{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;width:100%;min-width:0}
+.photo-legacy #guestbookForm .roy-rich-count{white-space:nowrap;flex:none;margin-left:0;font-variant-numeric:tabular-nums}
+.photo-legacy #guestbookForm .roy-rich-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;width:100%;min-width:0;margin:0}
+.photo-legacy #guestbookForm .roy-rich-hint{min-width:0;font-size:11px}
+
+/* Album composers keep the count and their actual post/reply actions only. */
+.photo-legacy #guestbookForm .roy-rich-preview-toggle,.photo-legacy #modalReplyForm .roy-rich-preview-toggle{display:none!important}
+.photo-legacy #guestbookForm .roy-rich-actions>button[type=submit]:not(:has([data-i18n="guestbook.submit"])){display:none!important}
+.photo-legacy #guestbookForm .roy-rich-actions:not(:has([data-i18n="guestbook.submit"])){display:none!important}
+
+/* The bar and panel share one continuous glass surface while expanding and closing. */
+.photo-legacy #photo-site-header.is-past-cover.is-menu-open{background:transparent!important;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom-color:transparent}
+
+/* Outside an active collapse, track the sticky bar without animating its height. */
+.photo-legacy .photo-glass-bar:not(.photo-nav-open):not(.photo-nav-closing) .photo-nav-surface{transition-property:background-color,border-color,visibility;transition-duration:280ms,120ms,0s;transition-delay:0s}
+
+/* Latin type follows the main site's font stack; Chinese keeps the album's serif face. */
+@font-face{font-family:'Century Gothic';src:url('/shared/fonts/centurygothic.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:'Century Gothic';src:url('/shared/fonts/centurygothic_bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:ComicShannsMono;src:url('/shared/fonts/ComicShannsMonoNerdFontPropo-Regular.otf');font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:Satoshi;src:url('/shared/fonts/Satoshi-Variable.ttf');font-weight:300 900;font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+@font-face{font-family:Satoshi;src:url('/shared/fonts/Satoshi-VariableItalic.ttf');font-weight:300 900;font-style:italic;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
+.photo-legacy{--photo-text-font:'Century Gothic','ComicShannsMono','Satoshi','Noto Serif SC','SimSun','Songti SC',serif}
+.photo-legacy,.photo-legacy :is(button,input,textarea,select,.font-mono,.font-serif,.roy-rich-count,.roy-rich-body code,.holiday-poster .poster-title,.photo-cover-caption [data-admin=hero-gear]){font-family:var(--photo-text-font)!important}
+/* Preserve the photographic wordmark as a mark, independently of body typography. */
+.photo-legacy #loginBtn>span,.photo-legacy .identity .logo{font-family:'Times New Roman',serif!important}
+/* The header name uses sans-serif in both Chinese and Latin. */
+.photo-legacy .identity span{font-family:'Century Gothic','Satoshi',system-ui,sans-serif!important}
+
+.photo-legacy roy-account-auth{display:block;min-width:0;margin-top:1.25rem;font-size:.875rem}.photo-legacy roy-account-auth [hidden]{display:none!important}.photo-legacy .roy-auth-fields{display:flex;flex-wrap:wrap;align-items:flex-end;gap:.75rem}.photo-legacy .roy-auth-field{display:block;flex:1 1 12rem;min-width:0}.photo-legacy .roy-auth-field>span{display:block;margin-bottom:.5rem}.photo-legacy .roy-auth-field input{box-sizing:border-box;display:block;width:100%;min-width:0;border:1px solid hsl(var(--border,0 0% 85%));border-radius:.5rem;background:hsl(var(--background,0 0% 100%));color:inherit;padding:.6rem .75rem;font:inherit;line-height:1.5}.photo-legacy .roy-auth-primary{flex:0 0 auto;border:1px solid hsl(var(--foreground,0 0% 10%));border-radius:.5rem;background:hsl(var(--foreground,0 0% 10%));color:hsl(var(--background,0 0% 100%));padding:.6rem 1rem;font-size:.875rem;line-height:1.5;cursor:pointer}.photo-legacy .roy-auth-links{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;align-items:center;margin-top:.85rem;font-size:.75rem;color:hsl(var(--muted-foreground,0 0% 45%))}.photo-legacy .roy-auth-links a,.photo-legacy .roy-auth-link,.photo-legacy .roy-auth-links button{text-decoration:underline;text-underline-offset:3px;cursor:pointer}.photo-legacy .roy-auth-links button,.photo-legacy .roy-auth-link{border:0;background:none;padding:0;color:inherit;font:inherit}.photo-legacy .roy-auth-hint,.photo-legacy .roy-auth-status,.photo-legacy .roy-auth-target{font-size:.75rem;line-height:1.8;margin:.75rem 0 0;overflow-wrap:anywhere}.photo-legacy .roy-auth-target{flex-basis:100%;margin:0;color:hsl(var(--muted-foreground,0 0% 45%))}.photo-legacy .roy-auth-status[data-error=true]{color:#bd4141}.photo-legacy .roy-auth-setup-title{font-size:.875rem;font-weight:500;margin:0 0 1rem}.photo-legacy .roy-auth-link{font-size:.75rem;display:inline-block;margin-top:.75rem}.photo-legacy roy-account-auth button:disabled{opacity:.5;cursor:wait}.photo-legacy roy-account-auth input:focus-visible,.photo-legacy roy-account-auth button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.photo-legacy roy-account-auth[data-variant=photo]{margin:0;color:white}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-fields{display:flex;flex-direction:column;align-items:stretch;gap:.75rem}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-field{flex:none}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-field>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.photo-legacy roy-account-auth[data-variant=photo] input{padding:.75rem 1.25rem;background:#ffffff1a;border:1px solid #ffffff33;border-radius:2px;color:white;text-align:center;font-size:1.125rem;line-height:1.5}.photo-legacy roy-account-auth[data-variant=photo] input::placeholder{color:#ffffff4d}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-primary{width:100%;padding:.75rem;background:white;color:#2c2a27;border:0;border-radius:2px;letter-spacing:.04em;font-weight:500}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-primary:hover{background:#e5e7eb}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-links{justify-content:center;font-size:10px;color:#ffffff99}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-status,.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-hint,.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-target{color:#ffffff99;font-size:11px}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-status[data-error=true]{color:#ffe1d9}.photo-legacy roy-account-auth[data-variant=photo] .roy-auth-setup-title{color:#ffffffb3;font-weight:400;font-size:12px}
+@media(max-width:480px){.photo-legacy .roy-auth-field{flex-basis:100%}.photo-legacy .roy-auth-primary{margin-left:auto}}
+
+html.dark .photo-legacy roy-account-auth[data-variant=photo] .roy-auth-primary{background:var(--dk-text);color:#171614}html.dark .photo-legacy roy-account-auth[data-variant=photo] .roy-auth-primary:hover{background:#cdc7bc}
+
+.photo-legacy roy-account-auth [data-blog-field]{flex-basis:100%}
+
+.photo-legacy .roy-account-avatar{display:inline-flex;width:2.25rem;height:2.25rem;flex:none;align-items:center;justify-content:center;overflow:hidden;border-radius:50%;background-color:var(--roy-avatar-bg,#e8e9e6);background-size:cover;background-position:center;color:var(--roy-avatar-fg,#555);font-size:.875rem;font-weight:600;line-height:1;user-select:none;cursor:default;vertical-align:middle}.photo-legacy roy-avatar-settings{display:block;margin-top:1rem;font-size:.8125rem}.photo-legacy roy-avatar-settings[hidden]{display:none!important}.photo-legacy .roy-avatar-settings-row{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}.photo-legacy .roy-avatar-settings-row .roy-account-avatar{width:2.75rem;height:2.75rem}.photo-legacy .roy-avatar-actions{display:flex;align-items:center;gap:1rem}.photo-legacy .roy-avatar-actions button{padding:.4rem 0;font:inherit;color:inherit;cursor:pointer;background:transparent;border:0}.photo-legacy .roy-avatar-actions button:hover{text-decoration:underline;text-underline-offset:4px}.photo-legacy .roy-avatar-actions button:disabled{opacity:.5;cursor:wait}.photo-legacy [data-avatar-status]{color:inherit;opacity:.65;font-size:.75rem;line-height:1.5}.photo-legacy roy-comments .roy-account-avatar,.photo-legacy roy-moments .roy-account-avatar{--roy-avatar-bg:hsl(var(--muted));--roy-avatar-fg:hsl(var(--foreground))}.photo-legacy .moment-reply .roy-account-avatar{width:1.75rem;height:1.75rem;font-size:.75rem}.photo-legacy .roy-comment-avatar{width:2rem;height:2rem}.photo-legacy .roy-photo-avatar{width:1.5rem;height:1.5rem;font-size:.65rem;--roy-avatar-bg:rgba(255,255,255,.12);--roy-avatar-fg:inherit;margin-right:.5rem}.photo-legacy roy-avatar-settings input[hidden]{display:none!important}
+
+.photo-legacy .roy-blog-avatar-link{display:inline-flex;flex-shrink:0;line-height:1;text-decoration:none;color:inherit;border-radius:50%}.photo-legacy .roy-blog-avatar-link[href]{cursor:pointer}.photo-legacy .roy-blog-avatar-link[href]:hover{opacity:.85}.photo-legacy .roy-blog-avatar-link[href]:focus-visible{outline:2px solid currentColor;outline-offset:3px}.photo-legacy .roy-blog-name{display:inline-flex;align-items:center;gap:.55em;min-width:0}.photo-legacy .roy-blog-badge{display:inline-block;flex:none;width:1em;height:1em;vertical-align:-.1em;background:url('./blog-badge-light.webp') center/contain no-repeat}.photo-legacy .roy-blog-badge[hidden]{display:none!important}html.dark .roy-blog-badge,html.dark .photo-legacy .roy-blog-badge{background-image:url('./blog-badge-dark.webp')}
+.photo-legacy roy-blog-settings{display:block;min-width:0;margin:.25rem 0 1rem;font-size:.8125rem}.photo-legacy roy-blog-settings[hidden],.photo-legacy roy-blog-settings [hidden]{display:none!important}.photo-legacy .roy-blog-settings-row{display:flex;align-items:center;gap:.65rem;flex-wrap:wrap}.photo-legacy .roy-blog-settings-row button{font:inherit;border:1px solid hsl(var(--border,0 0% 80%));border-radius:.45rem;padding:.45rem .7rem;background:transparent;color:inherit;cursor:pointer}.photo-legacy .roy-blog-settings-row a{min-width:0;overflow-wrap:anywhere;color:inherit;text-decoration:underline;text-underline-offset:3px}.photo-legacy .roy-blog-input-label{display:grid;gap:.5rem;margin-top:.75rem}.photo-legacy .roy-blog-input-label input{box-sizing:border-box;width:100%;min-width:0;padding:.6rem .75rem;border:1px solid hsl(var(--border,0 0% 80%));border-radius:.5rem;background:hsl(var(--background,0 0% 100%));color:inherit;font:inherit}.photo-legacy .roy-blog-hint,.photo-legacy .roy-blog-status{font-size:.75rem;line-height:1.7;margin:.5rem 0;color:inherit;opacity:.8}.photo-legacy .roy-blog-status:empty{display:none}.photo-legacy roy-blog-settings button:disabled{opacity:.5;cursor:wait}.photo-legacy roy-blog-settings :is(button,input,a):focus-visible{outline:2px solid currentColor;outline-offset:3px}
+
+.photo-legacy roy-blog-settings .roy-blog-settings-row [data-blog-edit]{border:0;border-radius:0;padding:0;background:transparent;text-decoration:underline;text-underline-offset:3px;}
+.photo-legacy roy-comments>roy-avatar-settings{margin-top:0;}.photo-legacy roy-comments roy-blog-settings{margin-top:0;}
+
+.photo-legacy [data-about-portrait-switch] {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.photo-legacy [data-about-portrait-switch]:enabled {
+  cursor: pointer;
+}
+
+.photo-legacy [data-about-portrait-switch]:focus-visible {
+  outline: 2px solid #5c554a;
+  outline-offset: 3px;
+}
+
+.photo-legacy{width:100%;min-width:0;position:relative;overflow:clip;background:#fff}
+html.dark .photo-legacy{background:#121110;color:#e9e5dd}
+.photo-legacy .vignette{display:none}
+
+.photo-legacy .photo-originals{padding:1rem;text-align:center;font-size:.8rem}
+.photo-legacy .photo-guest-login{border:1px solid currentColor;border-radius:3px;padding:.4rem .8rem;margin-bottom:.75rem;font-size:.8rem}
+.photo-legacy #destDetail,.photo-legacy #lightbox,.photo-legacy #loginModal,.photo-legacy #messageModal{z-index:100}
+
+
+/* Photography is a full-bleed page, not a card inside the normal content shell. */
+.site-shell.photography-shell{max-width:none;width:100%;padding:0}
+.photography-shell>header-component{position:fixed;top:1rem;left:clamp(20px,4.5vw,88px);right:clamp(20px,4.5vw,88px);margin:0;z-index:30}
+.photography-shell.photo-cover-active>header-component{color:#fff;border-color:transparent;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.photography-shell.photo-cover-active>header-component>a{color:#fff}
+.photography-shell.photo-cover-active>header-component :is(#language-switch-btn,#header-account-button,#toggleMenu){color:#fff;border-color:#ffffff55}
+.photography-shell.photo-cover-active>header-component .header-controls>roy-header-account::before,.photography-shell.photo-cover-active>header-component .header-controls>roy-header-account::after{background:#ffffff55}
+.photography-shell.photo-cover-active>header-component .dropdown-menu{color:hsl(var(--foreground))}
+.photography-shell.photo-cover-active>header-component :is(.blog-menu-link,#headerExpandConetent>div>a):hover{color:#ffffffc0}
+.photography-shell>footer{width:100%;margin:0;padding:1.5rem clamp(20px,4.5vw,88px);max-width:none}
+.photography-shell #normalHero .photo-cover{height:100vh;height:100svh}
+.photography-shell .photo-legacy :is(#gallery-section,#destinations-section,#guestbook-section,#about-section){scroll-margin-top:5rem}
+.photography-shell:has(>header-component.expanded)>:is(.mobile-toc-dock,#to-top-btn){visibility:hidden;pointer-events:none}
+@media(max-width:1023px){
+ .photography-shell.photo-cover-active>.header-menu-surface{background:rgba(22,22,23,.94)}
+ .photography-shell.photo-cover-active>header-component .dropdown-menu .category-link{color:#ffffffc0}
+ .photography-shell.photo-cover-active>header-component .dropdown-menu .category-link:hover{background:#ffffff19;color:white}
+}
+@media(max-height:619px){.photography-shell #normalHero .photo-cover{min-height:0}}
