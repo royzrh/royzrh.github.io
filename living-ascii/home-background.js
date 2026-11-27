@@ -30,7 +30,6 @@ export async function mount(canvas){
   // tied to active wall time rather than the number of rendered frames.
   const gl=renderer.getContext();
   let fence=null,raf=0,frame=0,last=0,elapsed=0,deadline=0,visible=true,lost=false;
-  let scrollTimer=0,scrolling=false;
   const header=document.querySelector("header-component");
   const fps=coarse.matches?20:30;
   const interval=1000/fps;
@@ -51,7 +50,7 @@ export async function mount(canvas){
     canvas.dataset.asciiFrames=String(frame);
   };
   const menuOpen=()=>header?.classList.contains('expanded')||!!document.querySelector('#header-account-dialog[open]');
-  const active=()=>!dark()&&!document.hidden&&visible&&!lost&&!scrolling&&!menuOpen();
+  const active=()=>!dark()&&!document.hidden&&visible&&!lost&&!menuOpen();
   const stop=()=>{
     cancelAnimationFrame(raf);raf=0;last=0;deadline=0;
     canvas.dataset.asciiPaused='true';
@@ -75,13 +74,6 @@ export async function mount(canvas){
     canvas.dataset.asciiPaused='false';
     raf=requestAnimationFrame(tick);
   };
-  // Scrolling takes priority over this decorative animation. Keep the last
-  // painted frame visible and resume from the same phase after input settles.
-  window.addEventListener('scroll',()=>{
-    if(!scrolling){scrolling=true;stop();}
-    clearTimeout(scrollTimer);
-    scrollTimer=setTimeout(()=>{scrolling=false;restart()},140);
-  },{passive:true});
   if(header){
     let expanded=menuOpen();
     new MutationObserver(()=>{
