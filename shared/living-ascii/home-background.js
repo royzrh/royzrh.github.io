@@ -10,6 +10,8 @@ export async function mount(canvas){
   const coarse=matchMedia('(pointer: coarse)');
   const dark=()=>document.documentElement.classList.contains('dark');
   const snow=backdrop.dataset.asciiVariant==='snow';
+  const safari=/AppleWebKit/i.test(navigator.userAgent)&&/Safari\//i.test(navigator.userAgent)&&!/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|DuckDuckGo|GSA/i.test(navigator.userAgent);
+  const lowOverhead=safari&&snow;
   const image=await loadImage(new URL(snow?'./green-canopy.jpeg':'./grass.png',import.meta.url).href);
   // Keep glyphs legible at moderate raster size; no high-DPI multiplication.
   const aspect=Math.max(.4,backdrop.clientWidth/Math.max(1,backdrop.clientHeight));
@@ -24,14 +26,15 @@ export async function mount(canvas){
   const renderer=new THREE.WebGLRenderer({canvas,antialias:false,preserveDrawingBuffer:false,powerPreference:'low-power'});
   renderer.setPixelRatio(1);
   renderer.setSize(W,H,false);
-  const field=buildField(renderer,{image:source,maps,width:W,height:H,wind:snow?.14:maps.dominant,light:130*Math.PI/180,amp:snow?.74:.72,natural:snow,density:snow?(coarse.matches?.40:.50):(coarse.matches?.55:.68)});
-  const post=makePost(renderer,W,H,field,snow);
+  const field=buildField(renderer,{image:source,maps,width:W,height:H,wind:snow?.14:maps.dominant,light:130*Math.PI/180,amp:snow?.74:.72,natural:snow,lowOverhead,density:lowOverhead?(coarse.matches?.30:.38):snow?(coarse.matches?.40:.50):(coarse.matches?.55:.68)});
+  const post=makePost(renderer,W,H,field,snow,lowOverhead?0:2);
   // Never queue more than one unfinished GPU frame. Keep animation phase
   // tied to active wall time rather than the number of rendered frames.
   const gl=renderer.getContext();
   let fence=null,raf=0,frame=0,last=0,elapsed=0,deadline=0,visible=true,lost=false;
   const header=document.querySelector("header-component");
-  const fps=snow?(coarse.matches?16:24):(coarse.matches?20:30);
+  const fps=lowOverhead?(coarse.matches?12:20):snow?(coarse.matches?16:24):(coarse.matches?20:30);
+  canvas.dataset.asciiTargetFps=String(fps);
   const interval=1000/fps;
   const gpuReady=()=>{
     if(!fence)return true;

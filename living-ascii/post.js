@@ -20,8 +20,8 @@ const FINAL_FS = /* glsl */`
     gl_FragColor = vec4(clamp(c, 0.0, 1.0), 1.0);
   }`;
 
-export function makePost(renderer, W, H, field, natural = false) {
-  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: 2 });
+export function makePost(renderer, W, H, field, natural = false, samples = 2) {
+  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples });
   const dirRT = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType });
   const ascii = new AsciiStrokes(renderer, W, H, {natural, photo:field.photo});
   const finalMat = new THREE.ShaderMaterial({

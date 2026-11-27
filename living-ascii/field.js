@@ -39,8 +39,13 @@ const COMMON = /* glsl */`
   }
   float pfbm(vec2 p, vec2 per) {
     float s = 0.0, a = 0.5;
+    #ifdef LOW_OVERHEAD
+    for (int i = 0; i < 2; i++) { s += a * pnoise(p, per); p *= 2.0; per *= 2.0; a *= 0.5; }
+    return s / 0.75;
+    #else
     for (int i = 0; i < 4; i++) { s += a * pnoise(p, per); p *= 2.0; per *= 2.0; a *= 0.5; }
     return s / 0.9375;
+    #endif
   }
   vec3 toLin(vec3 c) { return pow(max(c, 0.0), vec3(2.2)); }
   vec2 isoOf(vec2 uv) { return vec2(uv.x * uRes.x / uRes.y, uv.y); }
@@ -236,14 +241,15 @@ export function buildField(renderer, opts) {
     uLight: { value: opts.light }, uAmp: { value: opts.amp }, uNatural: { value: opts.natural ? 1 : 0 },
     uSheen: { value: new THREE.Vector3(...opts.maps.tint).multiplyScalar(0.36) },
   };
+  const defines = opts.lowOverhead ? { LOW_OVERHEAD: 1 } : {};
   const scene = new THREE.Scene();
   const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), new THREE.ShaderMaterial({
-    uniforms, vertexShader: QUAD_VS, fragmentShader: GROUND_FS, depthWrite: false,
+    uniforms, defines, vertexShader: QUAD_VS, fragmentShader: GROUND_FS, depthWrite: false,
   }));
   ground.renderOrder = -1;
-  const colorMat = new THREE.ShaderMaterial({ uniforms, vertexShader: STRAND_VS, fragmentShader: STRAND_FS, side: THREE.DoubleSide });
-  const dirMat = new THREE.ShaderMaterial({ uniforms, vertexShader: STRAND_VS, fragmentShader: DIR_FS, side: THREE.DoubleSide });
+  const colorMat = new THREE.ShaderMaterial({ uniforms, defines, vertexShader: STRAND_VS, fragmentShader: STRAND_FS, side: THREE.DoubleSide });
+  const dirMat = new THREE.ShaderMaterial({ uniforms, defines, vertexShader: STRAND_VS, fragmentShader: DIR_FS, side: THREE.DoubleSide });
   const { geo, count } = strandGeometry(mulberry32(640), W, H, opts.density);
   const strands = new THREE.Mesh(geo, colorMat);
   for (const m of [ground, strands]) { m.frustumCulled = false; scene.add(m); }
