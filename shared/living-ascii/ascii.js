@@ -159,6 +159,10 @@ export class AsciiStrokes {
     this.quadScene.add(this.quad);
   }
 
+  dispose() {
+    this.cellRT.dispose();this.atlas.tex.dispose();this.reduceMat.dispose();this.drawMat.dispose();this.quad.geometry.dispose();
+  }
+
   pass(material, target) {
     this.quad.material = material;
     this.renderer.setRenderTarget(target);

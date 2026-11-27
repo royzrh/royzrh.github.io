@@ -20,10 +20,16 @@ const FINAL_FS = /* glsl */`
     gl_FragColor = vec4(clamp(c, 0.0, 1.0), 1.0);
   }`;
 
-export function makePost(renderer, W, H, field, natural = false, samples = 2) {
+export function makePost(renderer, W, H, field, natural = false, samples = 2, outputW = W, outputH = H) {
   const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples });
   const dirRT = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType });
-  const ascii = new AsciiStrokes(renderer, W, H, {natural, photo:field.photo});
+  let ascii = new AsciiStrokes(renderer, outputW, outputH, {natural, photo:field.photo});
+  const gl=renderer.getContext();
+  const validate=target=>{
+    renderer.setRenderTarget(target);
+    if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE){renderer.setRenderTarget(null);throw Error('ASCII framebuffer incomplete');}
+  };
+  validate(rt);validate(dirRT);validate(ascii.cellRT);renderer.setRenderTarget(null);
   const finalMat = new THREE.ShaderMaterial({
     uniforms: { tScene: { value: rt.texture }, uFrame: { value: 0 } },
     vertexShader: QUAD_VS, fragmentShader: FINAL_FS, depthTest: false, depthWrite: false,
@@ -35,6 +41,11 @@ export function makePost(renderer, W, H, field, natural = false, samples = 2) {
   const cam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
   return {
     rt,
+    resizeOutput(w,h) {
+      ascii.dispose();
+      ascii=new AsciiStrokes(renderer,w,h,{natural,photo:field.photo});
+      validate(ascii.cellRT);renderer.setRenderTarget(null);
+    },
     renderScene(frame) {
       finalMat.uniforms.uFrame.value = frame % 997;
       renderer.setRenderTarget(rt);
