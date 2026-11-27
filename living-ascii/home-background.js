@@ -10,7 +10,7 @@ export async function mount(canvas){
   const coarse=matchMedia('(pointer: coarse)');
   const dark=()=>document.documentElement.classList.contains('dark');
   const snow=backdrop.dataset.asciiVariant==='snow';
-  const image=await loadImage(new URL(snow?'./ginkgo-sky.jpeg':'./grass.png',import.meta.url).href);
+  const image=await loadImage(new URL(snow?'./green-canopy.jpeg':'./grass.png',import.meta.url).href);
   // Keep glyphs legible at moderate raster size; no high-DPI multiplication.
   const aspect=Math.max(.4,backdrop.clientWidth/Math.max(1,backdrop.clientHeight));
   const W=coarse.matches?448:864;
