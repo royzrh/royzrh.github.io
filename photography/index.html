@@ -1022,6 +1022,7 @@ function formatPhotoDate(value){
                 // Card
                 const card = document.createElement('div');
                 card.className = 'tl-card';
+                card.dataset.destinationId = dest.id;
                 card.onclick = () => openDestination(dest.id);
                 card.innerHTML = `
                     <img src="${dest.cover}" alt="${albumContentEscape(isZh ? dest.nameZh : dest.nameEn)}" class="tl-img" loading="lazy" onerror="this.src='https://placehold.co/400x280/d6cfc2/2c2a27?text=Destination'">
@@ -1259,11 +1260,35 @@ function formatPhotoDate(value){
             }
         }
 
+        // Open search targets using the existing gallery and destination overlays.
+        function openAlbumSearchTarget() {
+            const params = new URLSearchParams(window.location.search);
+            const photoId = params.get('photo');
+            const destinationId = params.get('destination');
+            const photoIndex = photoId === null ? -1 : photos.findIndex(p => String(p.id) === photoId);
+            if (photoIndex !== -1) {
+                renderGallery('all', Math.floor(photoIndex / galleryPageSize()) + 1);
+                document.getElementById('gallery-section').scrollIntoView({behavior:'instant',block:'start'});
+                openLightbox(photos[photoIndex].id);
+                return;
+            }
+            const destination = destinations.find(d => d.id === destinationId);
+            if (!destination) return;
+            const card = Array.from(document.querySelectorAll('[data-destination-id]')).find(el => el.dataset.destinationId === destination.id);
+            document.getElementById('destinations-section').scrollIntoView({behavior:'instant',block:'start'});
+            if (card) {
+                const track = document.getElementById('timelineTrack');
+                track.scrollLeft += card.getBoundingClientRect().left - track.getBoundingClientRect().left - (track.clientWidth - card.clientWidth) / 2;
+            }
+            openDestination(destination.id);
+        }
+
         // On Load Execution
         window.onload = function () {
             loadLang();
             loadUser();
             renderDestinations();
+            openAlbumSearchTarget();
             initGuestbook();
             checkBirthdayHero();
             checkHoliday();
