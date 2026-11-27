@@ -2336,3 +2336,10 @@ html.dark .photo-legacy{background:#121110;color:#e9e5dd}
  .photography-shell.photo-cover-active>header-component .dropdown-menu .category-link:hover{background:#ffffff19;color:white}
 }
 @media(max-height:619px){.photography-shell #normalHero .photo-cover{min-height:0}}
+
+
+/* Site-wide typography: same typeface as the main site outside journal prose. */
+.photography-shell .photo-legacy{--photo-text-font:var(--site-ui-font);font-family:var(--site-ui-font)!important}
+.photography-shell .photo-legacy :is(button,input,textarea,select,.font-serif,.font-mono,.roy-rich-count,.holiday-poster .poster-title,.photo-cover-caption [data-admin=hero-gear]){font-family:var(--site-ui-font)!important}
+.photography-shell .photo-legacy :is(code,pre,.roy-rich-body code){font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace!important}
+.photography-shell .photo-legacy .photo-cover-explore>span:last-child{font-family:inherit}
