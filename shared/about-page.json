@@ -61,6 +61,11 @@
       "date": "2026-11-27",
       "description": "从今天起，[相册](/zz/)正式合并到主站啦！本次更新增加了页面动效并解决了一些已知问题。",
       "descriptionEn": "Today, the [album](/photography/) entered the main station! This update adds page animations and fixes some known issues."
+    },
+    {
+      "date": "2026-11-28",
+      "description": "更新了网站字体与(网站政策)[https://royzhao.cn/terms/list]。",
+      "descriptionEn": "Updated the website font and (website policy) [https://royzhao.cn/terms/list]."
     }
   ]
 }
