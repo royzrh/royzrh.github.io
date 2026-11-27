@@ -13,8 +13,8 @@ export async function mount(canvas){
   const image=await loadImage(new URL(snow?'./ginkgo-sky.jpeg':'./grass.png',import.meta.url).href);
   // Keep glyphs legible at moderate raster size; no high-DPI multiplication.
   const aspect=Math.max(.4,backdrop.clientWidth/Math.max(1,backdrop.clientHeight));
-  const W=coarse.matches?576:1080;
-  const H=Math.max(320,Math.min(coarse.matches?1152:1012,Math.round(W/aspect/2)*2));
+  const W=coarse.matches?448:864;
+  const H=Math.max(320,Math.min(coarse.matches?896:810,Math.round(W/aspect/2)*2));
   const source=document.createElement('canvas');
   source.width=W;source.height=H;
   const scale=Math.max(W/image.width,H/image.height);
@@ -30,6 +30,8 @@ export async function mount(canvas){
   // tied to active wall time rather than the number of rendered frames.
   const gl=renderer.getContext();
   let fence=null,raf=0,frame=0,last=0,elapsed=0,deadline=0,visible=true,lost=false;
+  let scrollTimer=0,scrolling=false;
+  const header=document.querySelector("header-component");
   const fps=coarse.matches?20:30;
   const interval=1000/fps;
   const gpuReady=()=>{
@@ -48,10 +50,16 @@ export async function mount(canvas){
     if(canvas.dataset.asciiState!=='ready')canvas.dataset.asciiState='ready';
     canvas.dataset.asciiFrames=String(frame);
   };
-  const active=()=>!dark()&&!document.hidden&&visible&&!lost;
+  const menuOpen=()=>header?.classList.contains('expanded')||!!document.querySelector('#header-account-dialog[open]');
+  const active=()=>!dark()&&!document.hidden&&visible&&!lost&&!scrolling&&!menuOpen();
+  const stop=()=>{
+    cancelAnimationFrame(raf);raf=0;last=0;deadline=0;
+    canvas.dataset.asciiPaused='true';
+  };
   const tick=now=>{
     raf=0;
-    if(!active()||reduced.matches){last=0;deadline=0;return;}
+    if(!active()){stop();return;}
+    if(reduced.matches){if(gpuReady()){draw();stop();}else raf=requestAnimationFrame(tick);return;}
     if(last)elapsed+=Math.min(now-last,250);
     last=now;
     if(!deadline)deadline=now;
@@ -62,12 +70,25 @@ export async function mount(canvas){
     raf=requestAnimationFrame(tick);
   };
   const restart=()=>{
-    cancelAnimationFrame(raf);raf=0;last=0;deadline=0;
+    stop();
     if(!active())return;
-    if(reduced.matches){
-      if(gpuReady())draw();
-    }else raf=requestAnimationFrame(tick);
+    canvas.dataset.asciiPaused='false';
+    raf=requestAnimationFrame(tick);
   };
+  // Scrolling takes priority over this decorative animation. Keep the last
+  // painted frame visible and resume from the same phase after input settles.
+  window.addEventListener('scroll',()=>{
+    if(!scrolling){scrolling=true;stop();}
+    clearTimeout(scrollTimer);
+    scrollTimer=setTimeout(()=>{scrolling=false;restart()},140);
+  },{passive:true});
+  if(header){
+    let expanded=menuOpen();
+    new MutationObserver(()=>{
+      const next=menuOpen();
+      if(next!==expanded){expanded=next;restart();}
+    }).observe(header,{attributes:true,attributeFilter:['class','open'],subtree:true});
+  }
   new IntersectionObserver(([e])=>{if(visible!==e.isIntersecting){visible=e.isIntersecting;restart()}}).observe(backdrop);
   let wasDark=dark();
   new MutationObserver(()=>{const current=dark();if(current!==wasDark){wasDark=current;restart()}}).observe(document.documentElement,{attributes:true,attributeFilter:['class']});

@@ -14,54 +14,16 @@ const BINS = 8;
 // [half length, lit pixels out of the 4×6 box], light → heavy
 const WEIGHTS = [[1.6, 3], [3.6, 6], [3.6, 10], [3.6, 14]];
 
-// Strokes stay inside a 4×6 box (last column and bottom row left blank, as
-// in the bitmap font), so neighbouring glyphs never join into long lines.
-function strokeGlyph(theta, halfLen, halfThick) {
-  const rows = [];
-  const dx = Math.cos(theta), dy = Math.sin(theta);
-  // centred on a pixel (col 1, row 3), so a one-pixel line stays one pixel wide
-  const cx = 1.5, cy = 3.5;
-  for (let y = 0; y < CELL_H; y++) {
-    let row = '';
-    for (let x = 0; x < CELL_W; x++) {
-      let hit = 0;
-      for (let sy = 0; sy < 4; sy++) for (let sx = 0; sx < 4; sx++) {
-        if (x === CELL_W - 1 || y === 0) continue;
-        const px = x + (sx + 0.5) / 4 - cx, py = y + (sy + 0.5) / 4 - cy;
-        const along = px * dx + py * dy, across = Math.abs(-px * dy + py * dx);
-        if (across <= halfThick && Math.abs(along) <= halfLen) hit++;
-      }
-      row += hit >= 5 ? '#' : '.';
-    }
-    rows.push(row); // row 0 is the bottom: theta is measured with y up
-  }
-  return rows;
-}
-
-const litCount = (rows) => rows.join('').split('#').length - 1;
-
-// search length and thickness for the stroke that lights closest to `target`
-// pixels while still reading as a line (never thicker than half its length).
-// Angles that can't reach the target (horizontal: the box is 4 px wide) are
-// evened out by the per-cell glow solve.
-function fitStroke(theta, halfLen, target) {
-  let best = null, bestCost = Infinity;
-  for (let hl = 0.8; hl <= 4.6; hl += 0.1) for (let ht = 0.2; ht <= hl * 0.5; ht += 0.05) {
-    const g = strokeGlyph(theta, hl, ht);
-    const cost = Math.abs(litCount(g) - target) * 10 + Math.abs(hl - halfLen) + ht * 0.1;
-    if (cost < bestCost) { best = g; bestCost = cost; }
-  }
-  return best;
-}
+// Precomputed from the original fitStroke routine; identical 32 stroke glyphs.
+const STROKES = [[".....",".....",".....","###..",".....",".....","....."],[".....",".....",".....","###..",".....",".....","....."],[".....",".....","#....",".#...","..#..",".....","....."],[".....",".....",".#...",".#...",".#...",".....","....."],[".....",".....",".#...",".#...",".#...",".....","....."],[".....",".....",".#...",".#...",".#...",".....","....."],[".....",".....","..#..",".#...","#....",".....","....."],[".....",".....",".....","###..",".....",".....","....."],[".....",".....",".....","####.",".....",".....","....."],[".....",".....","#....","###..","..##.",".....","....."],[".....",".....","##...","###..",".##..",".....","....."],[".....","#....",".#...",".#...",".#...","..#..","..#.."],[".....",".#...",".#...",".#...",".#...",".#...",".#..."],[".....","..#..",".#...",".#...",".#...","#....","#...."],[".....",".....",".##..","###..","##...",".....","....."],[".....",".....","..##.","###..","#....",".....","....."],[".....",".....","###..","####.","###..",".....","....."],[".....",".....","##...","####.",".###.","...#.","....."],[".....","#....","##...","###..",".###.","..#..","....."],[".....","##...","##...",".#...",".##..",".##..","..#.."],[".....",".#...","###..","###..","###..",".#...","....."],[".....",".##..",".##..",".#...","##...","##...","#...."],[".....","..#..",".###.","###..","##...","#....","....."],[".....","...#.",".###.","####.","##...",".....","....."],[".....",".....","####.","####.","####.",".....","....."],[".....","#....","###..","####.","####.","..##.","....."],[".....","##...","###..","####.","####.",".##..","....."],[".....","##...","##...","###..",".##..",".###.","..##."],[".....","###..","###..","###..","###..","###..","....."],[".....",".###.",".##..","###..","##...","##...","##..."],[".....",".##..","####.","####.","###..","##...","....."],[".....","..##.","####.","####.","###..","#....","....."]];
+const litCount = (rows) => rows.join("").split("#").length - 1;
 
 // one strip of CELL_W×CELL_H glyphs; rows already bottom-up
 function buildAtlas() {
   const glyphs = [];
   const flip = (g) => g.slice().reverse(); // font rows are top-down
   for (const ch of RAMP) glyphs.push(flip(G[ch]));
-  for (let w = 0; w < WEIGHTS.length; w++) for (let b = 0; b < BINS; b++) {
-    glyphs.push(fitStroke((b / BINS) * Math.PI, ...WEIGHTS[w]));
-  }
+  glyphs.push(...STROKES);
   // fraction of the cell each glyph lights, for the colour solve
   const covers = glyphs.map((g) => litCount(g) / (CELL_W * CELL_H));
   const W = CELL_W * glyphs.length;
