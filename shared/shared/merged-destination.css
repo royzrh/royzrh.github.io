@@ -19,12 +19,12 @@
 @font-face{font-family:ComicShannsMono;src:url('/shared/fonts/ComicShannsMonoNerdFontPropo-Regular.otf');font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
 @font-face{font-family:Satoshi;src:url('/shared/fonts/Satoshi-Variable.ttf');font-weight:300 900;font-style:normal;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
 @font-face{font-family:Satoshi;src:url('/shared/fonts/Satoshi-VariableItalic.ttf');font-weight:300 900;font-style:italic;font-display:swap;unicode-range:U+0000-024F,U+1E00-1EFF}
-.destination-legacy{--photo-text-font:'Formera','ComicShannsMono','Satoshi','Noto Serif SC','SimSun','Songti SC',serif}
+.destination-legacy{--photo-text-font:'Futura','Futura PT','Formera','ComicShannsMono','Satoshi','Noto Serif SC','SimSun','Songti SC',serif}
 .destination-legacy,.destination-legacy :is(button,input,textarea,select,.font-mono,.font-serif,.roy-rich-count,.roy-rich-body code,.holiday-poster .poster-title,.photo-cover-caption [data-admin=hero-gear]){font-family:var(--photo-text-font)!important}
 /* Preserve the photographic wordmark as a mark, independently of body typography. */
 .destination-legacy #loginBtn>span,.destination-legacy .identity .logo{font-family:'Times New Roman',serif!important}
 /* The header name uses sans-serif in both Chinese and Latin. */
-.destination-legacy .identity span{font-family:'Formera','Satoshi',system-ui,sans-serif!important}
+.destination-legacy .identity span{font-family:'Futura','Futura PT','Formera','Satoshi',system-ui,sans-serif!important}
 
 
 /* Keep the original journal surface and single reading column. */
@@ -106,7 +106,7 @@ html.dark .destination-shell{--journal-paper:#121110;--journal-ink:#e9e5dd;--jou
 @media(max-width:1023px){
  .destination-shell .mobile-toc-button{background:var(--journal-soft);color:var(--journal-muted)}
  .destination-shell .mobile-toc-button:is(:hover,:focus-visible,[aria-expanded=true]){color:var(--journal-ink);border-color:var(--journal-line)}
- .destination-shell .mobile-toc-panel{background:var(--journal-paper);color:var(--journal-ink);border-color:var(--journal-line);border-radius:4px;box-shadow:0 8px 25px #00000012;font-family:Formera,Satoshi,Noto Serif SC,SimSun,serif}
+ .destination-shell .mobile-toc-panel{background:var(--journal-paper);color:var(--journal-ink);border-color:var(--journal-line);border-radius:4px;box-shadow:0 8px 25px #00000012;font-family:Futura,"Futura PT",Formera,Satoshi,Noto Serif SC,SimSun,serif}
  .destination-shell .mobile-toc-title{font-weight:400;letter-spacing:.15em;color:var(--journal-muted);border-color:var(--journal-line)}
  .destination-shell .mobile-toc-panel a{border-radius:2px}
  .destination-shell .mobile-toc-panel a:is(:hover,:focus-visible,[aria-current=true]){background:var(--journal-soft);color:var(--journal-ink)}
@@ -116,5 +116,5 @@ html.dark .destination-shell{--journal-paper:#121110;--journal-ink:#e9e5dd;--jou
 /* Only the journal article retains its distinct reading typefaces. */
 .destination-shell .destination-legacy{--photo-text-font:var(--site-ui-font);font-family:var(--site-ui-font)!important}
 .destination-shell .destination-legacy :is(button,input,textarea,select,.font-serif,.font-mono,.roy-rich-count){font-family:var(--site-ui-font)!important}
-.destination-shell .journey-prose{--photo-text-font:'Formera','ComicShannsMono','Satoshi','Noto Serif SC','SimSun','Songti SC',serif;font-family:'Blog Charter','Blog Han Serif',serif}
+.destination-shell .journey-prose{--photo-text-font:'Futura','Futura PT','Formera','ComicShannsMono','Satoshi','Noto Serif SC','SimSun','Songti SC',serif;font-family:'Blog Charter','Blog Han Serif',serif}
 .destination-shell .mobile-toc-panel{font-family:var(--site-ui-font)}
