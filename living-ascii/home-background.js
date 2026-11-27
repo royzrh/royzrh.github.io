@@ -12,7 +12,20 @@ export async function mount(canvas){
   const snow=backdrop.dataset.asciiVariant==='snow';
   const safari=/AppleWebKit/i.test(navigator.userAgent)&&/Safari\//i.test(navigator.userAgent)&&!/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|DuckDuckGo|GSA/i.test(navigator.userAgent);
   const lowOverhead=safari&&snow;
-  const image=await loadImage(new URL(snow?'./green-canopy.jpeg':'./grass.png',import.meta.url).href);
+  // Select only one daylight image per homepage mount. Remember the last
+  // selection in this tab so a reload does not repeat it.
+  const homeImages=['ginkgo-sky.webp','green-canopy.webp','sunlit-leaves.webp','golden-clouds.webp'];
+  let imageName='grass.png';
+  if(snow){
+    const key='roy-home-ascii-last-image';
+    let previous='';
+    try{previous=sessionStorage.getItem(key)||''}catch{}
+    const choices=homeImages.filter(name=>name!==previous);
+    imageName=choices[Math.floor(Math.random()*choices.length)];
+    try{sessionStorage.setItem(key,imageName)}catch{}
+  }
+  const image=await loadImage(new URL('./'+imageName,import.meta.url).href);
+  canvas.dataset.asciiImage=imageName;
   // Keep glyphs legible at moderate raster size; no high-DPI multiplication.
   const aspect=Math.max(.4,backdrop.clientWidth/Math.max(1,backdrop.clientHeight));
   const W=snow?(coarse.matches?400:768):(coarse.matches?448:864);
