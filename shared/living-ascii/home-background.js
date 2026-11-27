@@ -15,7 +15,7 @@ export async function mount(canvas){
   // Select only one daylight image per homepage mount. Remember the last
   // selection in this tab so a reload does not repeat it.
   const homeImages=['ginkgo-sky.webp','green-canopy.webp','sunlit-leaves.webp','golden-clouds.webp'];
-  let imageName='grass.png';
+  let imageName='grass.webp';
   if(snow){
     const key='roy-home-ascii-last-image';
     let previous='';
