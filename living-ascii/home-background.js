@@ -13,8 +13,8 @@ export async function mount(canvas){
   const image=await loadImage(new URL(snow?'./green-canopy.jpeg':'./grass.png',import.meta.url).href);
   // Keep glyphs legible at moderate raster size; no high-DPI multiplication.
   const aspect=Math.max(.4,backdrop.clientWidth/Math.max(1,backdrop.clientHeight));
-  const W=coarse.matches?448:864;
-  const H=Math.max(320,Math.min(coarse.matches?896:810,Math.round(W/aspect/2)*2));
+  const W=snow?(coarse.matches?400:768):(coarse.matches?448:864);
+  const H=Math.max(320,Math.min(snow?(coarse.matches?800:720):(coarse.matches?896:810),Math.round(W/aspect/2)*2));
   const source=document.createElement('canvas');
   source.width=W;source.height=H;
   const scale=Math.max(W/image.width,H/image.height);
@@ -31,7 +31,7 @@ export async function mount(canvas){
   const gl=renderer.getContext();
   let fence=null,raf=0,frame=0,last=0,elapsed=0,deadline=0,visible=true,lost=false;
   const header=document.querySelector("header-component");
-  const fps=coarse.matches?20:30;
+  const fps=snow?(coarse.matches?16:24):(coarse.matches?20:30);
   const interval=1000/fps;
   const gpuReady=()=>{
     if(!fence)return true;
