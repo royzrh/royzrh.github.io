@@ -101,11 +101,13 @@ const STRAND_VS = /* glsl */`
                  * (0.5 + 0.9 * pfbm(rq * 4.0 - vec2(8.0 * uT, 0.0), vec2(8.0, 1000.0))));
     float amp = (1.05 + 0.6 * gust) * uAmp;
     float own = 0.12 * sin(TAU * 6.0 * uT + aParam.z) + 0.06 * sin(TAU * 9.0 * uT + aParam.z * 1.7);
-    vec3 original = texture(tImg, aRoot).rgb;
-    float sky = smoothstep(0.025, 0.20, original.b - original.r);
-    float motionScale = mix(1.0, mix(1.0, 0.50, sky), uNatural);
-    amp *= motionScale;
-    own *= motionScale;
+    if (uNatural > 0.5) {
+      vec3 original = texture(tImg, aRoot).rgb;
+      float sky = smoothstep(0.025, 0.20, original.b - original.r);
+      float motionScale = mix(1.0, 0.66, sky);
+      amp *= motionScale;
+      own *= motionScale;
+    }
     float L = aParam.x * (0.8 + 0.5 * m.g), W = aParam.y;
 
     int seg = int(aStrand.y + 0.5);
@@ -146,7 +148,8 @@ const STRAND_FS = /* glsl */`
     // negative s would be NaN
     float s = clamp(vS, 0.0, 1.0);
     // the strand carries the image it covered at rest
-    vec3 c = toLin(texture(tImg, vRestUv).rgb);
+    vec3 original = toLin(texture(tImg, vRestUv).rgb);
+    vec3 c = original;
     c *= mix(0.72, 1.18, pow(s, 0.6)) * (1.0 - 0.22 * vSide * vSide);  // darker roots, rounded edges
     vec2 uv = gl_FragCoord.xy / uRes;
     float sun = sunPool(windFrame(isoOf(uv)));
@@ -162,7 +165,7 @@ const STRAND_FS = /* glsl */`
     c += lightCol * glint * (0.25 + 0.6 * vGust) * (0.3 + dot(c, vec3(2.0)));
     // sheen where gusts flatten the strands, tinted by the image's own colour
     c += uSheen * vGust * sun * s * 0.6;
-    c = mix(c, toLin(texture(tImg, vRestUv).rgb), 0.72 * uNatural);
+    c = mix(c, original, 0.72 * uNatural);
     gl_FragColor = vec4(c, 1.0);
   }`;
 
@@ -184,7 +187,7 @@ const GROUND_FS = /* glsl */`
   void main() {
     vec3 c = toLin(textureLod(tImg, vUv, 1.5).rgb) * 0.62;
     c *= poolTint(sunPool(windFrame(isoOf(vUv))));
-    c = mix(c, toLin(texture(tImg, vUv).rgb), 0.9 * uNatural);
+    if (uNatural > 0.5) c = mix(c, toLin(texture(tImg, vUv).rgb), 0.9);
     gl_FragColor = vec4(c, 1.0);
   }`;
 

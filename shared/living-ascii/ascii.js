@@ -142,9 +142,12 @@ export class AsciiStrokes {
           // the flow grade is a touch more saturated than the image; pull back
           // toward the image's own colour
           c = mix(vec3(luma(c)), c, uSat);
-          vec3 original = texture2D(uOriginal, (cell * uCell + 0.5 * uCell) / uRes).rgb;
-          c = mix(c, original, 0.48 * uNatural);
-          float sky = smoothstep(0.025, 0.20, original.b - original.r);
+          float sky = 0.0;
+          if (uNatural > 0.5) {
+            vec3 original = texture2D(uOriginal, (cell * uCell + 0.5 * uCell) / uRes).rgb;
+            c = mix(c, original, 0.48);
+            sky = smoothstep(0.025, 0.20, original.b - original.r);
+          }
           float l = luma(c);
           float bin = floor(texel.a);
           float conf = fract(texel.a) / 0.9;

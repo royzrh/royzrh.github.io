@@ -21,7 +21,7 @@ const FINAL_FS = /* glsl */`
   }`;
 
 export function makePost(renderer, W, H, field, natural = false) {
-  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: natural ? 2 : 4 });
+  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: 2 });
   const dirRT = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType });
   const ascii = new AsciiStrokes(renderer, W, H, {natural, photo:field.photo});
   const finalMat = new THREE.ShaderMaterial({
