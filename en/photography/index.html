@@ -198,14 +198,8 @@ function formatPhotoDate(value){
                     <h4 class="text-lg font-light tracking-wider text-[#2c2a27] border-b border-[#e2dcd0] pb-3" data-i18n="guestbook.title">留下墨迹</h4>
 
 
-                    <button type="button" class="photo-guest-login" onclick="openLoginModal()">账号 / Account</button><form id="guestbookForm" onsubmit="handleGuestbookSubmit(event)" class="space-y-4">
-                        <div id="nameFieldWrapper">
-                            <label class="block text-xs uppercase tracking-widest text-[#5c554a] mb-2" data-i18n="guestbook.name">昵称</label>
-                            <input type="text" id="visitorName" required data-i18n-placeholder="guestbook.name_ph" placeholder="e.g. 拾光者"
-                                class="w-full px-4 py-2.5 bg-[#fafaf9] border border-[#d6cfc2] rounded-sm focus:outline-none focus:border-[#2c2a27] text-sm tracking-wide text-[#2c2a27] placeholder-[#a39b90] transition-colors">
-                        </div>
-
-                        <roy-avatar-settings style="color:#5c554a"></roy-avatar-settings>
+                    <form id="guestbookForm" onsubmit="handleGuestbookSubmit(event)" class="space-y-4">
+                        <input type="hidden" id="visitorName" value="">
                         <div>
                             <label class="block text-xs uppercase tracking-widest text-[#5c554a] mb-2" data-i18n="guestbook.theme">选择相纸颜色</label>
                             <div class="grid grid-cols-3 gap-2 text-[#2c2a27]">
