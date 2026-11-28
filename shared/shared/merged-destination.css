@@ -96,12 +96,13 @@ html.dark .destination-shell{--journal-paper:#121110;--journal-ink:#e9e5dd;--jou
  .destination-legacy .journey-reading-grid{display:grid;grid-template-columns:minmax(144px,1fr) minmax(0,860px) minmax(144px,1fr);align-items:start}
  .destination-legacy .journey-reading-grid>main{grid-column:2;width:100%;min-width:0;margin:0}
  .destination-legacy .journey-toc{grid-column:3;display:block;position:sticky;top:100px;min-width:0;padding:74px 20px 0 0}
- .destination-legacy .journey-toc-inner{max-width:220px;max-height:calc(100dvh - 190px);overflow:auto;overscroll-behavior:contain;border-left:1px solid var(--line);padding:0 0 0 16px}
- .destination-legacy .journey-toc-label{font-size:12px;letter-spacing:.18em;color:var(--muted);margin-bottom:14px}
+ .destination-legacy .journey-toc-inner{max-width:220px;max-height:calc(100dvh - 190px);overflow:auto;overscroll-behavior:contain;padding:0;scrollbar-width:none;-ms-overflow-style:none}
+ .destination-legacy .journey-toc-inner::-webkit-scrollbar{display:none}
+ .destination-legacy .journey-toc-label{font-size:11px;font-weight:500;line-height:1.5;letter-spacing:.06em;color:hsl(var(--muted-foreground));padding-bottom:12px;border-bottom:1px solid hsl(var(--border));margin-bottom:12px}
  .destination-legacy .journey-toc ul{list-style:none;padding:0;margin:0}
- .destination-legacy .journey-toc a{display:block;font-size:13px;line-height:1.65;color:var(--muted);padding:5px 0;padding-inline-start:calc(var(--journey-depth)*.55em);overflow-wrap:anywhere;transition:color .18s}
+ .destination-legacy .journey-toc a{display:block;font-size:13px;line-height:1.5;color:hsl(var(--foreground)/.75);padding:6px 12px;padding-inline-start:calc(12px + var(--journey-depth)*.8rem);margin-inline-start:8px;border-radius:3px;overflow-wrap:anywhere;transition:color .18s,background .18s}
  .destination-legacy .journey-toc a:is(:hover,:focus-visible,[aria-current=location]){color:var(--ink)}
- .destination-legacy .journey-toc a[aria-current=location]{font-weight:600}
+ .destination-legacy .journey-toc a[aria-current=location]{font-weight:500;color:hsl(var(--foreground));background:hsl(var(--foreground)/.045)}
 }
 @media(max-width:1023px){
  .destination-shell .mobile-toc-button{background:var(--journal-soft);color:var(--journal-muted)}
