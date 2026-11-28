@@ -1,0 +1,1 @@
+function e(e){if(typeof e!=`string`)return``;let t=e.trim();if(!t)return``;/^[a-z][a-z0-9+.-]*:/i.test(t)||(t=`https://`+t);try{let e=new URL(t);return![`http:`,`https:`].includes(e.protocol)||e.username||e.password||!e.hostname.includes(`.`)||/[\s<>"\\]/.test(t)||e.href.length>2048?``:e.href}catch{return``}}export{e as t};
