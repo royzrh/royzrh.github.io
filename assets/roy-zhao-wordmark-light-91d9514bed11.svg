@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 202" fill="#111111">
+  <title>Roy Zhao</title>
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#">
+      <rdf:Description rdf:about="">
+        <dc:title>ROY ZHAO</dc:title>
+        <dc:creator>赵润涵</dc:creator>
+        <dc:rights>© 2026 赵润涵 (Roy Zhao). All rights reserved.</dc:rights>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-11-28</dcterms:created>
+        <owl:versionInfo>v1.0</owl:versionInfo>
+      </rdf:Description>
+    </rdf:RDF>
+  </metadata>
+  <path d="M0 0H56C77 0 94 14 94 31S78 61 60 61L96 96H0Z"/>
+  <path d="M115.696088274954 81.574419434448 A48 48 0 0 1 177.433435156724 8.612100392356 L115.696088274954 81.574419434448 Z M184.303911725046 14.425580565552 A48 48 0 0 1 122.566564843276 87.387899607644 L184.303911725046 14.425580565552 Z"/>
+  <path d="M200.574374157796 0H311.425625842204L256 96Z"/>
+  <path transform="translate(0 -4)" d="M0 110H96L52 162H96V206H0L44 154H0Z"/>
+  <path transform="translate(150 106) scale(1.021276595745) translate(-150 -107)" d="M103 107H129V141H171V107H197V201H171V167H129V201H103Z"/>
+  <path fill-rule="evenodd" d="M256 106L311.425625842204 202H200.574374157796ZM256 147.056018970618L236.129929564607 181.471990514691H275.870070435393Z"/>
+  <circle cx="362" cy="154" r="48"/>
+</svg>
