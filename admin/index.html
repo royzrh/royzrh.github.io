@@ -7,6 +7,23 @@
       ?.setAttribute('content', theme === 'dark' ? '#181818' : '#f3efe7')
   }
   simpleSetTheme()
+
+  // Match the favicon to the actual page theme, including manual theme changes.
+  function syncRoyFavicon() {
+    const mode = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+    for (const link of document.querySelectorAll('link[rel="icon"]')) {
+      const href = link.getAttribute('href')
+      if (!href || !/\/roy-wordmark-v1(?:-light|-dark)?\.(svg|png)$/.test(href)) continue
+      const target = href.replace(/roy-wordmark-v1(?:-light|-dark)?\.(svg|png)$/, 'roy-wordmark-v1-' + mode + '.$1')
+      if (href !== target) link.setAttribute('href', target)
+    }
+  }
+  syncRoyFavicon()
+  if (!window.__royFaviconObserver) {
+    window.__royFaviconObserver = new MutationObserver(syncRoyFavicon)
+    window.__royFaviconObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    document.addEventListener('astro:page-load', syncRoyFavicon)
+  }
   if (!window.__roySystemThemeListening) {
     window.__roySystemThemeListening = true
     const media = window.matchMedia('(prefers-color-scheme: dark)')
