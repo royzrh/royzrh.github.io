@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 202" fill="#111111">
   <title>Roy Zhao</title>
-  <defs><mask id="cut" maskUnits="userSpaceOnUse" x="102" y="0" width="96" height="96"><rect x="102" y="0" width="96" height="96" fill="white"/><path d="M102 96L198 0" stroke="black" stroke-width="9"/></mask></defs>
   <path transform="translate(0 2) scale(.9583333333)" d="M0 0H56C77 0 94 14 94 31S78 61 60 61L96 96H0Z"/>
-  <circle cx="150" cy="48" r="48" mask="url(#cut)"/>
+  <path d="M113.026378506454 78.609660462867 A48 48 0 0 1 180.609660462867 11.026378506454 L113.026378506454 78.609660462867 Z M186.973621493546 17.390339537133 A48 48 0 0 1 119.390339537133 84.973621493546 L186.973621493546 17.390339537133 Z"/>
   <path d="M202 1.234628H310L256 94.765372Z"/>
   <path transform="translate(0 108) scale(.9583333333) translate(0 -110)" d="M0 110H96L52 162H96V206H0L44 154H0Z"/>
   <path d="M103 107H129V141H171V107H197V201H171V167H129V201H103Z"/>
